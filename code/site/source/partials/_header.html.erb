@@ -1,0 +1,8 @@
+<div class="navigation">
+	<p class="home-link"><%= link_to 'Home', '/' %></p>
+	<ul class="nav-list">
+		<% keys.each do |k| %>
+		<li><a href="/<%= k %>.html">Nav Item</a></li>
+		<% end %>
+	</ul>
+</div>

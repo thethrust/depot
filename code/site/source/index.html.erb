@@ -1,0 +1,21 @@
+---
+pageable: true
+per_page: 10
+---
+
+<h1>Welcome</h1>
+
+<% fixes = { "org" => "organisation", "toolsused" => "tools used", "orgtype" => "type of organisation" } %>
+<% sections = data["ind-all"].meta.keys %>
+
+<% sections.each do |sect| %>
+  <section>
+    <div class="section-inner">
+      <a href="/<%= sluggify(sect) %>.html">
+    <h2><%= (fixes.has_key? sect ) ? fixes[sect] : sect %></h2>
+    <p><em><%= data["ind-all"].meta[sect].length %></em></p>
+    </a>
+    </div>
+  </section>
+<% end %>
+

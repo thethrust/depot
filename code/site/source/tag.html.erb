@@ -1,0 +1,31 @@
+---
+pageable: true
+per_page: 12
+---
+<% fixes = { "org" => "organisation", "toolsused" => "tools used", "orgtype" => "type of organisation" } %>
+
+<% meta_tag_list = data["ind-all"].meta[tag_name] %>
+<div class="wrapper">
+    <div class="header">
+      <div class="header-inner">
+        <h1 class="page-title"><%= tag_name %></h1>
+        <p class="meta project-count">
+          <span class="count"><%= meta_tag_list.length %> projects</span>
+        </p>
+      </div>
+    </div>
+    <div class="list-container">
+      <ul class="list projects row">
+        <% meta_tag_list.each do |t| %>
+        <%= partial("partials/section-list-item", :locals => { :item => t }) %>
+        <% end %>
+      </ul>
+    </div>
+
+<!-- RELATED CONTENT -->
+<% tag_list = data["ind-all"]["projects"].select {|proj| proj[tag].map{|p| p.downcase }.include? tag_name unless proj[tag].nil? } %>
+
+<%= partial("partials/related", :locals => { :tag_list => tag_list, :tag_name => tag_name }) %>
+<!-- /END -->
+
+  </div>

@@ -1,0 +1,15 @@
+<!-- RELATED :: ORGANISATIONS -->
+<% related_orgs = tag_list.map { |r| r["org"] }.flatten.uniq %>
+<% if !related_orgs.nil? %>
+<div class="related orgs clearfix">
+  <h3 class="related-heading">Related Tags</h3>
+  <ul class="related list">
+    <% related_orgs.each do |t| %>
+      <% if !t.nil? %>
+        <li><a href="/<%= sluggify(t.strip) %>.html"><%= t.strip %></a></li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
+<hr />
+<% end %><!-- /END -->

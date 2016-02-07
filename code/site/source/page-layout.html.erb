@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- meta tags -->
+
+    <% tag_list = data["ind-all"]["projects"].select {|proj| proj[tag].map{|p| p.downcase }.include? tag_name unless proj[tag].nil? } %>
+    
+    <title><%= tag_name %></title>
+    <%= stylesheet_link_tag "all" %>
+  </head>
+  <body class="<%= page_classes %> <%= page_setting %>"> <!-- hidden -->
+    <div class="wrapper">
+      <div class="header">
+        <div class="header-inner">
+          <h1 class="page-title"><%= tag_name %></h1>
+          <p class="meta project-count">
+            <span class="count"><%= tag_list.length %> projects</span>
+          </p>
+        </div>
+      </div>
+      <div class="list-container">
+        <ul class="list projects row">
+          <% tag_list.each do |t| %>
+          <%= partial("partials/list-item", :locals => { :item => t, :tags => t["tags"] }) %>
+          <% end %>
+        </ul>
+      </div>
+
+      <!-- RELATED CONTENT -->
+      <%= partial("partials/related", :locals => { :tag_list => tag_list, :tag_name => tag_name }) %>
+      <!-- /END -->
+
+    </div>
+    <%= javascript_include_tag  "all" %>
+  </body>
+</html>
