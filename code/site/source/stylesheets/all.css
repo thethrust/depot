@@ -47,6 +47,12 @@ a:hover {
 	padding-bottom: 8em;
 }
 
+#back-to-top {
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+}
+
 
 /* HEADER 
 ------------------------------*/
@@ -55,11 +61,11 @@ a:hover {
 	padding-top: 4em;
 }
 
-/*.header .subhead span {
+.header .subhead span {
 	display: none;
 }
 
-.header .subhead span.index {
+/*.header .subhead span.index {
 	display: inline;
 }*/
 
@@ -94,7 +100,15 @@ a:hover {
 /* SECTION :: LEFT
 ------------------------------*/
 
+div.module:first-child {
+	border-top: 0;
+	padding-top: 0;
+}
 
+.module .link-item span {
+	font-size: 15px;
+	margin-bottom: 4em;
+}
 
 
 
