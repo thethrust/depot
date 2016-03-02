@@ -1,0 +1,37 @@
+<!-- SECTION :: ENTRIES LIST  -->
+
+<% if tag != "type" %>
+  <section class="border-top">
+    <div class="section-inner">
+      <h4>Entries</h4>
+      <ul class="link-list entries">
+        <% tag_list.each do |item| %>
+          <li class="entry border-top">
+            <div class="entry-inner">
+              <h6><a href="<%= item.url %>" target="_blank"><span><%= item.project %></span></a></h6>
+              <div class="meta secondary">
+                <p><span class="org-name"><%= item.org %></span><span class="date"><%= item.published %></span></p>
+              </div>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </section>
+<% end %>
+
+<% if tag == "type" %>
+  <% tag_groups = tag_list.group_by { |t| t[0] } %>
+  <% tag_groups.each do |k,v| %>
+    <section class="border-top">
+      <div class="section-inner">
+        <h4><%= k %></h4>
+        <ul class="link-set entries in-columns-two">
+          <% v.each do |item| %>
+            <li class="link-item entry"><a href="/<%= tag_name %>/<%= sluggify(item) %>/index.html"><span><%= item %></span></a></li>
+          <% end %>
+        </ul>
+      </div>
+    </section>
+  <% end %>
+<% end %>

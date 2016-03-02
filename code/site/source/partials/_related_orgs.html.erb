@@ -1,0 +1,26 @@
+<!-- RELATED :: ORGS -->
+<% related_orgs = tag_list.map { |r| r["org"] }.flatten.uniq %>
+<% if !related_orgs.nil? %>
+<section class="border-top related orgs">
+  <div class="section-inner">
+    <h4>Related Organisations</h4>
+    <ul class="link-list in-columns-two">
+      <div class="link-set">
+        <% (0..10).each do |i| %>
+          <% if !related_orgs[i].nil? %>
+            <% item = related_orgs[i] %>
+            <%= partial("partials/link_item", :locals => { :slug => sluggify(item), :item => item, :type => "org" }) %>
+          <% end %>
+        <% end %>
+        <% (11..20).each do |i| %>
+          <% if !related_orgs[i].nil? %>
+            <% item = related_orgs[i] %>
+            <%= partial("partials/link_item", :locals => { :slug => sluggify(item), :item => item, :type => "org" }) %>
+          <% end %>
+        <% end %>
+      </div>
+    </ul>
+    <a class="link overflow" href="/org/index.html"><span>See all &rarr;</span></a>
+  </div>
+</section>
+<% end %><!-- /END -->

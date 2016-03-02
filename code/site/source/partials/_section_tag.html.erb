@@ -1,0 +1,19 @@
+<% tag_list = data["ind-all"]["projects"].select {|proj| proj[tag].map{|p| p.downcase }.include? tag_name unless proj[tag].nil? } %>
+
+<div class="row primary">
+	<div class="columns three">
+		<%= partial("partials/page_column_left", :locals => { :tag_list => tag_list, :type => "tag" }) %>
+	</div>
+	<div class="columns nine">
+		<div class="subheader">
+			<h6 class="kicker"><%= tag %></h6>
+			<h4><%= tag_name.titleize %></h4>
+			<p><strong><%= data["ind-all"].meta[tag].map{ |t| t[tag_name] }.length %> entries</strong></p>
+		</div>
+		<%= partial("partials/related_orgs", :locals => { :tag_list => tag_list, :tag_name => tag_name, :tag => tag }) %>
+		<%= partial("partials/related_authors", :locals => { :tag_list => tag_list, :tag_name => tag_name, :tag => tag }) %>
+		<%= partial("partials/entries_list", :locals => { :tag_list => tag_list, :tag_name => tag_name, :tag => tag }) %>
+	</div>
+</div>
+
+<%# item = data["ind-all"].meta[tag][i] %>

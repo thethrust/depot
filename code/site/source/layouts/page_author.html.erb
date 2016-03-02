@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <!-- meta tags -->
+    
+    <title>hello</title>
+    <%= stylesheet_link_tag "all" %>
+  </head>
+  <body class="<%= page_classes %> hidden">
+    <div class="wrapper">
+      <%= yield %>
+    </div>
+    <%= javascript_include_tag  "all" %>
+  </body>
+</html>

@@ -70,10 +70,14 @@ end
 # ]
 
 # static_pages.each do |stat|
-#   page "/#{stat}.html", layout: "../source/layouts/page.html"
+#   page "/entry/index.html", layout: "page_entry.html"
 # end
 
+# page "/entry.html", layout: "page_entry.html"
 
+proxy "/entry/index.html", "page_entry.html", :locals => { :title => "HELLO!" }
+
+$entries = data["ind-all"]["projects"]
 $prox_sections = data["ind-all"].meta.keys
 $meta_data = data["ind-all"].meta
 
@@ -81,7 +85,7 @@ $meta_data = data["ind-all"].meta
 $prox_sections.each do |tag|
   regPat = /[^a-zA-Z0-9_-]/
   slug = tag.downcase.strip.gsub(regPat,'-')
-  proxy "/#{slug}.html", "tag.html", :locals => { :tag => tag, :tag_name => tag, :page_setting => "section" }
+  proxy "/#{slug}/index.html", "page_section_level.html", :locals => { :tag => tag, :tag_name => tag, :page_setting => "section" }
 end
 
 # Generate detail pages 
@@ -89,9 +93,16 @@ $prox_sections.each do |tag|
   $meta_data[tag].each do |t|
     regPat = /[^a-zA-Z0-9_-]/
     slug = t.downcase.strip.gsub(regPat,'-')
-    proxy "/#{slug}.html", "page-layout.html", :locals => { :tag => tag, :tag_name => t, :page_setting => "detail #{slug}" }
+    slug_tag = tag.downcase.strip.gsub(regPat,'-')
+    proxy "/#{slug_tag}/#{slug}/index.html", "page_router.html", :locals => { :tag => tag, :tag_name => t, :page_setting => "detail #{slug}" }
   end
 end
+
+# $entries[0..2].each do |ent|
+#   regPat = /[^a-zA-Z0-9_-]/
+#   slug = ent.project.downcase.strip.gsub(regPat,'-')
+#   proxy "/entry/index.html", "page_entry.html", :locals => { :tag => "entry", :tag_name => slug, :page_setting => "entry" }
+# end
 
 
 ##########################

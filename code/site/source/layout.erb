@@ -8,22 +8,20 @@
     <title>Depot</title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag "normalize.css" %>
+    <%= stylesheet_link_tag "normalize-opentype.css" %>
+    <%= stylesheet_link_tag "html5-boilerplate.css" %>
+    <%= stylesheet_link_tag "skeleton" %>
     <%= stylesheet_link_tag "all" %>
   </head>
   <body>
-    <div class="navigation">
-      <% fixes = { "org" => "organisation", "toolsused" => "tools used", "orgtype" => "type of organisation" } %>
-      <ul class="nav-list">
-        <li class="nav-item"><%= link_to 'Home', '/' %></li>
-        <% data["ind-all"]["meta"].keys.each do |k| %>
-        <li class="nav-item"><a href="/<%= k %>.html"><%= (fixes.has_key? k ) ? fixes[k] : k %></a></li>
-        <% end %>
-      </ul>
-    </div>
+
     <div id="main" class="main" role="main">
-      <%= yield %>
+      <div class="main-inner container" role="main">
+        <%= yield %>
+      </div>
     </div>
 
-    <%= partial("partials/footer", :locals => {}) %>
+    <%# partial("partials/footer", :locals => {}) %>
   </body>
 </html>

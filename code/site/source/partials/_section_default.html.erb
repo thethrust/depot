@@ -1,0 +1,29 @@
+<% meta_keys = data["ind-all"].meta.keys %>
+<% key_in_array = meta_keys.include? tag %>
+
+<% if key_in_array %>
+	<% if tag != "org" %>
+	<% tag_list = data["ind-all"]["projects"].select {|proj| proj[tag].map{|p| p.downcase }.include? tag_name unless proj[tag].nil? } %>
+	<% end %>
+	<% if tag == "org" %>
+	<% tag_list = [1,2,3,4] %>
+	<% end %>
+
+	<div class="row primary">
+		<div class="columns three">
+			<%= partial("partials/page_column_left", :locals => { :tag_list => tag_list, :type => "tag" }) %>
+		</div>
+		<div class="columns nine">
+			<div class="subheader">
+				<h6 class="kicker"><%= tag %></h6>
+				<h4><%= tag_name.titleize %></h4>
+				<p><strong><%= tag_list.length %> entries</strong></p>
+			</div>
+			<% if tag != "org" %>
+			<%= partial("partials/related_orgs", :locals => { :tag_list => tag_list, :tag_name => tag_name, :tag => tag }) %>
+			<%= partial("partials/related_authors", :locals => { :tag_list => tag_list, :tag_name => tag_name, :tag => tag }) %>
+			<%= partial("partials/entries_list", :locals => { :tag_list => tag_list, :tag_name => tag_name, :tag => tag }) %>
+			<% end %>
+		</div>
+	</div>
+<% end %>

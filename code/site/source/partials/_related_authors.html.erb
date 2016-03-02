@@ -1,0 +1,26 @@
+<!-- RELATED :: AUTHORS -->
+<% related_authors = tag_list.map { |r| r["authors"] }.flatten.uniq.reject { |n| n.downcase == tag_name } %>
+<% if !related_authors.nil? %>
+<section class="border-top related authors">
+  <div class="section-inner">
+    <h4>Related Authors</h4>
+    <ul class="link-list in-columns-two">
+      <div class="link-set">
+        <% (0..10).each do |i| %>
+          <% if !related_authors[i].nil? %>
+            <% item = related_authors[i] %>
+            <%= partial("partials/link_item", :locals => { :slug => sluggify(item), :item => item, :type => "authors" }) %>
+          <% end %>
+        <% end %>
+        <% (11..20).each do |i| %>
+          <% if !related_authors[i].nil? %>
+            <% item = related_authors[i] %>
+            <%= partial("partials/link_item", :locals => { :slug => sluggify(item), :item => item, :type => "authors" }) %>
+          <% end %>
+        <% end %>
+      </div>
+    </ul>
+    <a class="link overflow" href="/authors/index.html"><span>See all &rarr;</span></a>
+  </div>
+</section>
+<% end %><!-- /END -->
