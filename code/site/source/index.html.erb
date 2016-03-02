@@ -6,10 +6,10 @@ per_page: 10
 <% fixes = { "org" => "organisation", "toolsused" => "tools used", "orgtype" => "type of organisation" } %>
 <% sections = data["ind-all"].meta.keys.reject{ |k| k == "orgtype" } %>
 
-<%= partial("partials/header", :locals => { :fixes => fixes }) %>
+<%= partial("partials/header", :locals => { :fixes => fixes, :header_class => "index" }) %>
 
 <div class="row primary">
-	<div class="columns three">
+	<div class="columns three border-right">
 		<%= partial("partials/page_column_left", :locals => { :type => "index" }) %>
 	</div>
 	<div class="columns nine">

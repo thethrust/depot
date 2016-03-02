@@ -3,5 +3,5 @@
 
 <% tag_name = tag_name || "default" %>
 
-<%= partial("partials/header", :locals => { :fixes => fixes }) %>
+<%= partial("partials/header", :locals => { :fixes => fixes, :header_class => "" }) %>
 <%= partial("partials/section_default", :locals => { :slug => sluggify(tag_name), :tag => tag, :tag_name => tag_name }) %>

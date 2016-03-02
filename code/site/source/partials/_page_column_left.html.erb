@@ -1,23 +1,23 @@
 <% if type == "index" %>
 
 <div class="recent u-full-width">
-	<h6 class="heading">Recent Tags</h6>
+	<h6 class="kicker">Recent Tags</h6>
 	<ul class="link-list">
 		<li class="link-item"><a href="#"><span></span></a></li>
 	</ul>
-	<a class="link overflow" href="/tags.html"><span>See all &rarr;</span></a>
+	<a class="link overflow" href="/tags/index.html"><span>See all &rarr;</span></a>
 </div>
 
 <div class="recent u-full-width">
-	<h6 class="heading">Recent Tools</h6>
+	<h6 class="kicker">Recent Tools</h6>
 	<ul class="link-list">
 		<li class="link-item"><a href="#"><span></span></a></li>
 	</ul>
-	<a class="link overflow" href="/toolsused.html"><span>See all &rarr;</span></a>
+	<a class="link overflow" href="/toolsused/index.html"><span>See all &rarr;</span></a>
 </div>
 
 <div class="recent u-full-width">
-	<h6 class="heading">Recent Projects</h6>
+	<h6 class="kicker">Recent Projects</h6>
 	<ul class="link-list">
 		<li class="link-item"><a href="#"><span></span></a></li>
 	</ul>
@@ -26,22 +26,88 @@
 
 <% end %>
 
+
+
+
+
 <% if type == "tag" %>
+	<!-- STANDARD SIDEBAR -->
+	<% if tag != "authors" %>
+		<% tags_by_subject = tag_list.map { |t| t["subject"] }.flatten.uniq %>
+		<% if tags_by_subject.length > 0 %>
+			<div class="recent u-full-width">
+				<h6 class="kicker">Related Subjects</h6>
+				<ul class="link-list">
+					<% tags_by_subject.each do |sub| %>
+					<% sub = sub.flatten unless !sub.kind_of?(Array) %>
+					<li class="link-item"><a href="#"><span><%= sub %></span></a></li>
+					<% end %>
+				</ul>
+				<a class="link overflow" href="/subject/index.html"><span>See all &rarr;</span></a>
+			</div>
+		<% end %>
 
-<div class="recent u-full-width">
-	<h6 class="heading">Recent Subjects</h6>
-	<ul class="link-list">
-		<li class="link-item"><a href="#"><span></span></a></li>
-	</ul>
-	<a class="link overflow" href="/subjects.html"><span>See all &rarr;</span></a>
-</div>
+		<% tags_by_tool = tag_list.map { |t| t["toolsused"] }.flatten.uniq %>
+		<% if tags_by_tool.length > 0 %>
+			<div class="recent u-full-width">
+				<h6 class="kicker">Related Tools</h6>
+				<ul class="link-list">
+					<% tags_by_tool.each do |tool| %>
+					<% tool = tool.flatten unless !tool.kind_of?(Array) %>
+					<li class="link-item"><a href="#"><span><%= tool %></span></a></li>
+					<% end %>
+				</ul>
+				<a class="link overflow" href="/toolsused/index.html"><span>See all &rarr;</span></a>
+			</div>
+		<% end %>
+	<% end %>
 
-<div class="recent u-full-width">
-	<h6 class="heading">Recent Tools</h6>
-	<ul class="link-list">
-		<li class="link-item"><a href="#"><span></span></a></li>
-	</ul>
-	<a class="link overflow" href="/toolsused.html"><span>See all &rarr;</span></a>
-</div>
+	<!-- AUTHOR SIDEBAR -->
+	<% if tag == "authors" %>
+
+		<% tags_by_org = tag_list.map { |r| r["org"] }.flatten.uniq %>
+		<% if tags_by_org.length > 0 %>
+			<div class="recent u-full-width">
+				<h6 class="kicker">Organisations</h6>
+				<ul class="link-list">
+					<% tags_by_org.each do |org| %>
+					<%= partial("partials/link_item", :locals => { :slug => sluggify(org), :item => org, :type => "org" }) %>
+					<% end %>
+				</ul>
+				<a class="link overflow" href="/orgs/index.html"><span>See all &rarr;</span></a>
+			</div>
+		<% end %>
+
+
+		<% tags_by_tool = tag_list.map { |r| r["toolsused"] }.flatten.uniq %>
+		<% if tags_by_tool.length > 0 %>
+			<div class="recent u-full-width">
+				<h6 class="kicker">Related Tools</h6>
+				<ul class="link-list">
+					<% tags_by_tool.each do |tool| %>
+					<li class="link-item"><a href="#"><span><%= tool %></span></a></li>
+					<% end %>
+				</ul>
+				<a class="link overflow" href="/toolsused/index.html"><span>See all &rarr;</span></a>
+			</div>
+		<% end %>
+
+		<% tags_by_tag = tag_list.map { |r| r["tags"] }.flatten.uniq %>
+		<% if tags_by_tag.length > 0 %>
+			<div class="recent u-full-width">
+				<h6 class="kicker">Related Tags</h6>
+				<ul class="link-list">
+					<% tags_by_tag.each do |tg| %>
+					<li class="link-item"><a href="#"><span><%= tg %></span></a></li>
+					<% end %>
+				</ul>
+				<a class="link overflow" href="/tags/index.html"><span>See all &rarr;</span></a>
+			</div>
+		<% end %>
+
+	<% end %>
+
+
+
 
 <% end %>

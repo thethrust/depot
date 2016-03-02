@@ -29,6 +29,15 @@ p, li, a, span {
 	line-height: 25px;
 }
 
+a {
+	color: #009eff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #0069aa;
+	text-decoration: underline;
+}
 
 .wrapper {
 	overflow: hidden;
@@ -42,7 +51,17 @@ p, li, a, span {
 /* HEADER 
 ------------------------------*/
 
-.header {}
+.header {
+	padding-top: 4em;
+}
+
+/*.header .subhead span {
+	display: none;
+}
+
+.header .subhead span.index {
+	display: inline;
+}*/
 
 
 /* NAVIGATION
@@ -82,6 +101,23 @@ p, li, a, span {
 /* SECTION :: RIGHT
 ------------------------------*/
 
+.subheader {
+	margin-bottom: 4em;
+}
+
+.subheader h4 {
+	margin-bottom: 5px;
+}
+
+.subheader .entry-count {
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 15px;
+	text-transform: uppercase;
+}
+
+
 section {
 	margin-bottom: 4em;
 }
@@ -89,6 +125,14 @@ section {
 section:first-child {
 	border-top: 0;
 	padding-top: 0;
+}
+
+section h4,
+.kicker {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .link-set .link-item,
@@ -106,6 +150,32 @@ section:first-child {
 .link-list.entries li.entry {
 	margin-bottom: 20px;
 	padding: 10px 0;
+}
+
+.entry h6 {
+	margin-bottom: 5px;
+}
+
+.entry h6 a span {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 35px;
+}
+
+.meta.secondary p span {
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 15px;
+	text-transform: uppercase;
+}
+
+span.org-name {
+	margin-right: 10px;
+}
+
+.meta.secondary p span.org-name + span.date {
+	padding-left: 10px;
 }
 
 

@@ -1,6 +1,6 @@
 <!-- RELATED :: AUTHORS -->
 <% related_authors = tag_list.map { |r| r["authors"] }.flatten.uniq.reject { |n| n.downcase == tag_name } %>
-<% if !related_authors.nil? %>
+<% if !related_authors.nil? && related_authors.length > 0 %>
 <section class="border-top related authors">
   <div class="section-inner">
     <h4>Related Authors</h4>
