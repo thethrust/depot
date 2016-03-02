@@ -33,7 +33,7 @@
 <% if type == "tag" %>
 	<!-- STANDARD SIDEBAR -->
 	<% if tag != "authors" %>
-		<% tags_by_subject = tag_list.map { |t| t["subject"] }.flatten.uniq %>
+		<% tags_by_subject = tag_list.map { |t| t["subject"] }.reject{ |r| r.nil? }.flatten.uniq %>
 		<% if tags_by_subject.length > 0 %>
 			<div class="module border-top u-full-width">
 				<h6 class="kicker">Related Subjects</h6>
@@ -43,11 +43,10 @@
 					<%= partial("partials/link_item", :locals => { :slug => sluggify(sub), :item => sub, :type => "subject" }) %>
 					<% end %>
 				</ul>
-				<a class="link overflow" href="/subject/index.html"><span>See all &rarr;</span></a>
 			</div>
 		<% end %>
 
-		<% tags_by_tool = tag_list.map { |t| t["toolsused"] }.flatten.uniq %>
+		<% tags_by_tool = tag_list.map { |t| t["toolsused"] }.reject{ |r| r.nil? }.flatten.uniq %>
 		<% if tags_by_tool.length > 0 %>
 			<div class="module border-top u-full-width">
 				<h6 class="kicker">Related Tools</h6>
@@ -57,7 +56,6 @@
 					<%= partial("partials/link_item", :locals => { :slug => sluggify(tool), :item => tool, :type => "toolsused" }) %>
 					<% end %>
 				</ul>
-				<a class="link overflow" href="/toolsused/index.html"><span>See all &rarr;</span></a>
 			</div>
 		<% end %>
 	<% end %>
@@ -65,7 +63,7 @@
 	<!-- AUTHOR SIDEBAR -->
 	<% if tag == "authors" %>
 
-		<% tags_by_org = tag_list.map { |r| r["org"] }.flatten.uniq %>
+		<% tags_by_org = tag_list.map { |r| r["org"] }.reject{ |r| r.nil? }.flatten.uniq %>
 		<% if tags_by_org.length > 0 %>
 			<div class="module border-top u-full-width">
 				<h6 class="kicker">Organisations</h6>
@@ -74,25 +72,22 @@
 					<%= partial("partials/link_item", :locals => { :slug => sluggify(org), :item => org, :type => "org" }) %>
 					<% end %>
 				</ul>
-				<a class="link overflow" href="/orgs/index.html"><span>See all &rarr;</span></a>
 			</div>
 		<% end %>
 
-
-		<% tags_by_tool = tag_list.map { |r| r["toolsused"] }.flatten.uniq %>
+		<% tags_by_tool = tag_list.map { |r| r["toolsused"] }.reject{ |r| r.nil? }.flatten.uniq %>
 		<% if tags_by_tool.length > 0 %>
 			<div class="module border-top u-full-width">
 				<h6 class="kicker">Related Tools</h6>
 				<ul class="link-list">
-					<% tags_by_tool.each do |tool| %>
-					<li class="link-item"><a href="#"><span><%= tool %></span></a></li>
+					<% tags_by_tool.reject{ |r| r.nil? }.each do |tool| %>
+					<%= partial("partials/link_item", :locals => { :slug => sluggify(tool), :item => tool, :type => "toolsused" }) %>
 					<% end %>
 				</ul>
-				<a class="link overflow" href="/toolsused/index.html"><span>See all &rarr;</span></a>
 			</div>
 		<% end %>
 
-		<% tags_by_tag = tag_list.map { |r| r["tags"] }.flatten.uniq %>
+		<% tags_by_tag = tag_list.map { |r| r["tags"] }.reject{ |r| r.nil? }.flatten.uniq %>
 		<% if tags_by_tag.length > 0 %>
 			<div class="module border-top u-full-width">
 				<h6 class="kicker">Related Tags</h6>
@@ -101,7 +96,6 @@
 					<%= partial("partials/link_item", :locals => { :slug => sluggify(tg), :item => tg, :type => "tags" }) %>
 					<% end %>
 				</ul>
-				<a class="link overflow" href="/tags/index.html"><span>See all &rarr;</span></a>
 			</div>
 		<% end %>
 
