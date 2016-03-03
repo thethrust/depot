@@ -24,7 +24,7 @@
 			<div class="subheader">
 				<h6 class="kicker"><%= tag %></h6>
 				<h4><%= tag_name.titleize %></h4>
-				<p class="entry-count"><%= tag_list.length %> entries</p>
+				<p class="entry-count"><%= plural_text(tag_list.length) %></p>
 			</div>
 			<% if tag != "authors" && tag != "org" %>
 			<%= partial("partials/related_orgs", :locals => { :tag_list => tag_list, :tag_name => tag_name, :tag => tag }) %>

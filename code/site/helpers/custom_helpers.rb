@@ -28,7 +28,7 @@ module CustomHelpers
 
 	def get_date(str)
 		dte = str
-		
+
 		begin 
 			dte = Date.strptime(str, "%d-%b-%y")
 		rescue Exception=>e
@@ -57,7 +57,7 @@ module CustomHelpers
 	end
 
 
-	def plural_text(num, singular = "story", plural = "stories")
+	def plural_text(num, singular = "entry", plural = "entries")
 		text = (num < 2) ? singular : plural
 		return "#{num} #{text}"
 	end
