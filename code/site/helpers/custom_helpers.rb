@@ -26,6 +26,10 @@ module CustomHelpers
 		filtered_data
 	end
 
+	def get_date(str)
+		dte = Date.strptime(str, "%d-%b-%y")
+		dte
+	end
 
 	def get_current_year
 		# Flip to false if its a new year and I haven't made a new project yet
