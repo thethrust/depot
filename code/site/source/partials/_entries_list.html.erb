@@ -1,10 +1,6 @@
 <!-- SECTION :: ENTRIES LIST  -->
 
 <% if tag != "type" %>
-  <% dates = tag_list.map { |d| d.published = (d.published.nil?) ? get_date("0/00/0000") : get_date(d.published) } %>
-
-  <% puts "-----------------------" %>
-  <% puts dates.sort %>
   <section class="border-top">
     <div class="section-inner">
       <h4>Entries <span class="entry-count"><%= tag_list.length %></span></h4>
