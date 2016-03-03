@@ -81,7 +81,7 @@ $entries = data["ind-all"]["projects"]
 $prox_sections = data["ind-all"].meta.keys
 $meta_data = data["ind-all"].meta
 
-# Generate section-level pages 
+# Generate nav pages 
 $prox_sections.each do |tag|
   regPat = /[^a-zA-Z0-9_-]/
   slug = tag.downcase.strip.gsub(regPat,'-')

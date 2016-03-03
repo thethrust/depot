@@ -6,7 +6,7 @@
 <div class="navigation u-full-width border-bottom">
   <ul class="nav-list">
     <li class="nav-item"><%= link_to 'Home', '/' %></li>
-    <% data["ind-all"]["meta"].keys.reject{ |k| k == "orgtype" }.each do |k| %>
+    <% data["ind-all"]["meta"].keys.reject{ |k| k == "orgtype" || k == "section" }.each do |k| %>
     <li class="nav-item"><a href="/<%= k %>/index.html"><%= (fixes.has_key? k ) ? fixes[k] : k %></a></li>
     <% end %>
   </ul>

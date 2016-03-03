@@ -25,6 +25,7 @@ p {
 }
 
 p, li, a, span {
+	color: #222;
 	font-size: 18px;
 	line-height: 25px;
 }
@@ -35,7 +36,8 @@ a {
 }
 
 a:hover {
-	color: #0069aa;
+/*	color: #0069aa;*/
+	color: #009eff;
 	text-decoration: underline;
 }
 
@@ -104,6 +106,15 @@ a:hover {
 	margin-left: 0;
 }
 
+.nav-item a {
+	color: #222;
+	font-size: 14px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 15px;
+	text-transform: uppercase;
+}
+
 /* PRIMARY SPACE 
 ------------------------------*/
 
@@ -111,6 +122,18 @@ a:hover {
 	margin-bottom: 8em;
 }
 
+
+/* SECTION :: ALL
+*/
+
+.link.overflow,
+.link.overflow span {
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	line-height: 15px;
+	text-transform: uppercase;
+}
 
 
 /* SECTION :: LEFT

@@ -7,7 +7,7 @@
   <% puts dates.sort %>
   <section class="border-top">
     <div class="section-inner">
-      <h4>Entries</h4>
+      <h4>Entries <span class="entry-count"><%= tag_list.length %></span></h4>
       <ul class="link-list entries">
         <% tag_list.each do |item| %>
           <li class="entry border-top">

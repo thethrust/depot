@@ -3,7 +3,7 @@
 <% if !related_authors.nil? && related_authors.length > 0 %>
 <section class="border-top related authors">
   <div class="section-inner">
-    <h4>Related Authors</h4>
+    <h4>Related Authors <span class="entry-count"><%= related_authors.length %></span></h4>
     <ul class="link-list in-columns-two">
       <div class="link-set">
         <% (0..10).each do |i| %>

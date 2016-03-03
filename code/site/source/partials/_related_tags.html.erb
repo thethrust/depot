@@ -4,7 +4,7 @@
 <% if !related_tags.nil? %>
 <section class="border-top related tags">
   <div class="section-inner">
-    <h4>Related Tags</h4>
+    <h4>Related Tags <span class="entry-count"><%= related_tags.length %></span></h4>
     <ul class="link-list in-columns-two">
       <div class="link-set">
         <% (0..10).each do |i| %>
