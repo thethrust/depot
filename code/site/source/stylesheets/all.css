@@ -46,6 +46,8 @@ a:hover {
 }
 
 .main {
+	border-top: 8px solid #0069aa;
+	border-bottom: 8px solid #0069aa;
 	padding-bottom: 8em;
 }
 
@@ -76,7 +78,26 @@ a:hover {
 ------------------------------*/
 
 .header {
-	padding-top: 4em;
+	padding-top: 8em;
+	border-top: 8px solid #009eff;
+	margin-top: -8px;
+}
+
+.header.border-bottom {
+	padding-bottom: 4em;
+}
+
+.header .headline {
+	font-size: 6rem;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.header .subhead {
+	font-size: 2.6rem;
+	font-weight: 500;
+	color: #999;
+	margin-bottom: 0;
 }
 
 .header .subhead span {
@@ -163,6 +184,7 @@ div.module:first-child {
 }
 
 .subheader h4 {
+	font-size: 4.25rem;
 	margin-bottom: 5px;
 }
 
@@ -208,6 +230,15 @@ section h4,
 	padding: 10px 0;
 }
 
+.entries:hover .entry,
+.entries:hover .entry span {
+	color: #ccc;
+}
+
+.entries:hover .entry:hover span {
+	color: #009eff;
+}
+
 .entry h6 {
 	margin-bottom: 5px;
 }
@@ -238,12 +269,26 @@ span.org-name {
 /* PROMPT
 ------------------------------*/
 
+.prompt.border-top {
+	padding-top: 3em;
+}
 
+.prompt .subhead {
+	font-size: 2.6rem;
+	font-weight: 500;
+	color: #222;
+	margin-bottom: 10px;
+}
+
+.prompt p {
+	color: #999;
+}
 
 
 
 /* FOOTER
 ------------------------------*/
+
 
 
 
@@ -309,4 +354,14 @@ ul.in-columns-four {
 }
 
 
+
+
+@media (max-width: 550px) {
+	.main {
+		padding-bottom: 4em;
+	}
+	.row.primary .columns.three {
+		display: none;
+	}
+}
 

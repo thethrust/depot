@@ -7,4 +7,4 @@ per_page: 12
 <% meta_tag_list = data["ind-all"].meta[tag_name] %>
 
 <%= partial("partials/header", :locals => { :fixes => fixes, :header_class => "" }) %>
-<%= partial("partials/section_type", :locals => { :tag => "type", :tag_name => tag_name, :tag_list => meta_tag_list }) %>
+<%= partial("partials/section_type", :locals => { :tag => "type", :tag_name => tag_name, :tag_list => meta_tag_list, :fixes => fixes }) %>
