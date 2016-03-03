@@ -147,6 +147,12 @@ a:hover {
 /* SECTION :: ALL
 */
 
+ul.link-set + a.link.overflow,
+ul.link-list + a.link.overflow {
+	display: inline-block;
+	margin-top: 1em;
+}
+
 .link.overflow,
 .link.overflow span {
 	font-size: 12px;
