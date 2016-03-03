@@ -27,7 +27,14 @@ module CustomHelpers
 	end
 
 	def get_date(str)
-		dte = Date.strptime(str, "%d-%b-%y")
+		dte = str
+		
+		begin 
+			dte = Date.strptime(str, "%d-%b-%y")
+		rescue Exception=>e
+			puts "Problem: #{e}"
+		end
+
 		dte
 	end
 

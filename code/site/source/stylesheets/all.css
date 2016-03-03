@@ -143,14 +143,13 @@ div.module:first-child {
 	margin-bottom: 5px;
 }
 
-.subheader .entry-count {
+.entry-count {
 	font-size: 12px;
 	font-weight: 500;
 	letter-spacing: 1px;
 	line-height: 15px;
 	text-transform: uppercase;
 }
-
 
 section {
 	margin-bottom: 4em;

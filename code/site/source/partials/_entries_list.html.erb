@@ -29,7 +29,7 @@
   <% tag_groups.each do |k,v| %>
     <section class="border-top">
       <div class="section-inner">
-        <h4><%= k %></h4>
+        <h4><%= k %> <span class="entry-count"><%= v.length %> entries</span></h4>
         <ul class="link-set entries in-columns-two">
           <% v.each do |item| %>
             <li class="link-item entry"><a href="/<%= tag_name %>/<%= sluggify(item) %>/index.html"><span><%= item %></span></a></li>
