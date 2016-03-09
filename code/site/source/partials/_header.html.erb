@@ -7,7 +7,9 @@
   <ul class="nav-list">
     <li class="nav-item"><%= link_to 'Home', '/' %></li>
     <% data["ind-all"]["meta"].keys.reject{ |k| k == "orgtype" || k == "section" }.each do |k| %>
-    <li class="nav-item"><a href="/<%= k %>/index.html"><%= (fixes.has_key? k ) ? fixes[k] : k %></a></li>
+    <% fix_key = (fixes.has_key? k ) ? fixes[k] : k %>
+    <% is_active = (k == active_tag) ? "is-active" : ""  %>
+    <li class="nav-item <%= is_active %>"><a href="/<%= k %>/index.html"><%= fix_key %></a></li>
     <% end %>
   </ul>
 </div>

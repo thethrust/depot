@@ -13,7 +13,7 @@ per_page: 10
 		<%= partial("partials/page_column_left", :locals => { :type => "index" }) %>
 	</div>
 	<div class="columns nine">
-		<% sections.each do |sect| %>
+		<% sections.reject{ |k| k == "orgtype" || k == "section" }.each do |sect| %>
 			<section class="border-top">
 				<div class="section-inner">
 					<h4><%= (fixes.has_key? sect ) ? fixes[sect].titleize : sect.titleize %> <span class="entry-count"><%= plural_text(data["ind-all"].meta[sect].length) %></span></h4>

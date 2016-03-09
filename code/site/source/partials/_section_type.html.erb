@@ -6,9 +6,8 @@
 	</div>
 	<div class="columns nine">
 		<div class="subheader">
-			<h6 class="kicker"><%= tag %></h6>
 			<h4><%= (fixes.has_key? tag_name ) ? fixes[tag_name].titleize : tag_name.titleize %> </h4>
-			<p class="entry-count"><%= plural_text(tag_list.length) %></p>
+			<p><%= plural_text(tag_list.length) %></p>
 		</div>
 		<%= partial("partials/entries_list", :locals => { :tag_list => tag_list, :tag_name => tag_name, :tag => tag }) %>
 	</div>

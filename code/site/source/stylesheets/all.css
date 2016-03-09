@@ -6,9 +6,50 @@
 /*font-family: 'Open Sans', sans-serif;*/
 /*font-weights: 300,300italic,400,700 */
 
+@font-face {
+	font-family: 'kt-sans';
+	src: url('../assets/fonts/eau_sans/eau_sans_book.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'kt-sans-text';
+	src: url('../assets/fonts/eau_sans/eau_sans_book_osf.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'kt-sans-bold';
+	src: url('../assets/fonts/eau_sans/eau_sans_black_lng.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'kt-sans-italic';
+	src: url('../assets/fonts/eau_sans/eau_sans_book_obl.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'kt-sans-text-bold';
+	src: url('../assets/fonts/eau_sans/eau_sans_black_osf.otf') format('opentype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'kt-sans-text-italic';
+	src: url('../assets/fonts/eau_sans/eau_sans_book_osf_obl.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
 
 body {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'kt-sans', serif;
 	font-weight: 400;
 }
 
@@ -88,14 +129,14 @@ a:hover {
 }
 
 .header .headline {
+	font-family: 'kt-sans-bold', sans-serif;
 	font-size: 6rem;
-	font-weight: 700;
 	margin-bottom: 10px;
 }
 
 .header .subhead {
+	font-family: 'kt-sans-bold', sans-serif;
 	font-size: 2.6rem;
-	font-weight: 500;
 	color: #999;
 	margin-bottom: 0;
 }
@@ -136,6 +177,11 @@ a:hover {
 	text-transform: uppercase;
 }
 
+.nav-item.is-active a {
+	font-family: 'kt-sans-bold', sans-serif;
+	text-decoration: underline;
+}
+
 /* PRIMARY SPACE 
 ------------------------------*/
 
@@ -156,7 +202,6 @@ ul.link-list + a.link.overflow {
 .link.overflow,
 .link.overflow span {
 	font-size: 12px;
-	font-weight: 500;
 	letter-spacing: 1px;
 	line-height: 15px;
 	text-transform: uppercase;
@@ -195,8 +240,8 @@ div.module:first-child {
 }
 
 .entry-count {
-	font-size: 12px;
-	font-weight: 500;
+	font-family: 'kt-sans', sans-serif;
+	font-size: 11px;
 	letter-spacing: 1px;
 	line-height: 15px;
 	text-transform: uppercase;
@@ -213,8 +258,8 @@ section:first-child {
 
 section h4,
 .kicker {
-	font-size: 14px;
-	font-weight: 700;
+	font-family: 'kt-sans-bold', sans-serif;
+	font-size: 11px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -250,14 +295,13 @@ section h4,
 }
 
 .entry h6 a span {
+	font-family: 'kt-sans-bold', sans-serif;
 	font-size: 26px;
-	font-weight: 700;
 	line-height: 35px;
 }
 
 .meta.secondary p span {
 	font-size: 12px;
-	font-weight: 500;
 	letter-spacing: 1px;
 	line-height: 15px;
 	text-transform: uppercase;
@@ -281,11 +325,11 @@ span.org-name {
 
 .prompt .subhead {
 	font-size: 2.6rem;
-	font-weight: 500;
 	color: #222;
 	margin-bottom: 10px;
 }
 
+.subheader p,
 .prompt p {
 	color: #999;
 }
