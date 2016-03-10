@@ -3,7 +3,7 @@ pageable: true
 per_page: 12
 ---
 
-<% fixes = { "org" => "organisation", "toolsused" => "tools used", "orgtype" => "type of organisation" } %>
+<% fixes = { "org" => "organization", "toolsused" => "tools used", "orgtype" => "type of organization" } %>
 <% meta_tag_list = data["ind-all"].meta[tag_name] %>
 
 <%= partial("partials/header", :locals => { :fixes => fixes, :header_class => "", :active_tag => tag_name }) %>

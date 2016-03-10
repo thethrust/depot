@@ -82,7 +82,7 @@
 		<% tags_by_org = tag_list.map { |r| r["org"] }.reject{ |r| r.nil? }.flatten.uniq %>
 		<% if tags_by_org.length > 0 %>
 			<div class="module border-top u-full-width">
-				<h6 class="kicker">Organisations</h6>
+				<h6 class="kicker">Organizations</h6>
 				<ul class="link-list">
 					<% tags_by_org.reject{ |r| r.nil? }.each do |org| %>
 					<%= partial("partials/link_item", :locals => { :slug => sluggify(org), :item => org, :type => "org" }) %>
