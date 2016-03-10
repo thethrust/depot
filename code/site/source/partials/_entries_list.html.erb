@@ -8,7 +8,7 @@
     <div class="section-inner">
       <h4>Entries <span class="entry-count"><%= tag_list.length %></span></h4>
       <ul class="link-list entries">
-        <% tag_list.each do |item| %>
+        <% tag_list.sort_by{|s| s.project }.each do |item| %>
           <li class="entry border-top">
             <div class="entry-inner">
               <h6><a href="<%= item.url %>" target="_blank"><span><%= item.project %></span></a></h6>
