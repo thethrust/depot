@@ -115,33 +115,32 @@
 			</div>
 		<% end %>
 
-		<% if recent_tags.length > 0 %>
-			<div class="module border-top u-full-width">
-				<h6 class="kicker">Recent Tags</h6>
-				<ul class="link-list">
-					<% recent_tags.reject{ |r| r.nil? }.each do |ct| %>
-					<%= partial("partials/link_item", :locals => { :slug => sluggify(ct), :item => ct, :type => "tags" }) %>
-					<% end %>
-				</ul>
-				<a class="link overflow" href="/tags/"><span>See all &rarr;</span></a>
-			</div>
-		<% end %>
-
-		<% if recent_tools.length > 0 %>
-			<div class="module border-top u-full-width">
-				<h6 class="kicker">Recent Tools</h6>
-				<ul class="link-list">
-					<% recent_tools.reject{ |r| r.nil? }.each do |ct| %>
-					<%= partial("partials/link_item", :locals => { :slug => sluggify(ct), :item => ct, :type => "toolsused" }) %>
-					<% end %>
-				</ul>
-				<a class="link overflow" href="/toolsused/"><span>See all &rarr;</span></a>
-			</div>
-		<% end %>
-
 	<% end %>
 
+	<!-- DEFAULT SIDEBAR -->
+	<% if recent_tags.length > 0 %>
+		<div class="module border-top u-full-width">
+			<h6 class="kicker">Recent Tags</h6>
+			<ul class="link-list">
+				<% recent_tags.reject{ |r| r.nil? }.each do |ct| %>
+				<%= partial("partials/link_item", :locals => { :slug => sluggify(ct), :item => ct, :type => "tags" }) %>
+				<% end %>
+			</ul>
+			<a class="link overflow" href="/tags/"><span>See all &rarr;</span></a>
+		</div>
+	<% end %>
 
+	<% if recent_tools.length > 0 %>
+		<div class="module border-top u-full-width">
+			<h6 class="kicker">Recent Tools</h6>
+			<ul class="link-list">
+				<% recent_tools.reject{ |r| r.nil? }.each do |ct| %>
+				<%= partial("partials/link_item", :locals => { :slug => sluggify(ct), :item => ct, :type => "toolsused" }) %>
+				<% end %>
+			</ul>
+			<a class="link overflow" href="/toolsused/"><span>See all &rarr;</span></a>
+		</div>
+	<% end %>
 
 
 <% end %>
