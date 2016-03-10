@@ -1,5 +1,6 @@
 Org,Project,URL,Published,Tags,Section,Subject,Authors,Org Type,Tools Used,Backstory,Notes
 344,Wesley Stace Video,http://www.344lovesyou.com/projects/wesley-stace/,2014,video,,,,other,,,
+300.000 km/s,BIG TIME BCN,http://bigtimebcn.300000kms.net/,2016,interactive map,,,"Pablo Martinez, Mar Santamaria, Oriol Hostench",other,,,
 Airbnb,A World of Belonging on Airbnb,https://www.airbnb.co.uk/map,,"interactive feature, video, interactive map",,,,other,,,
 Airwars,Airwars,http://airwars.org/index.html,,"interactive graphic, interactive map, timeline",,,Dagbladet Information,other,Leaflet,,
 AKQA,AKQA Winterlands,http://snow.akqa.com/saopaulo.html#GI8kVYm2,,,,,,other,,,mobile only
@@ -20,9 +21,10 @@ Bolthouse Farms,The Food Porn Index,http://www.foodpornindex.com/,,,,,,other,,,
 Brookings Institution,The Bad News About the News,http://www.brookings.edu/research/essays/2014/bad-news,10/16/2014,"interactive presentation, static graphic, timeline",,,"Marcia Underwood, Jessica Pavone",other,,,
 BuzzFeed,62 People Now Own As Much Wealth As Half Of The World’s Population,http://www.buzzfeed.com/jamesball/for-whoever-has-to-him-will-be-given#.tj9Pmg05Vj,1/17/2016,interactive graphic,,,"James Ball, Chris Applegate",other,,,
 BuzzFeed,Can You Survive A Week As Jeremy Corbyn?,http://www.buzzfeed.com/tomphillips/can-you-survive-a-week-as-jeremy-corbyn,10/3/2015,game,,,,other,,,
-Buzzfeed,Let This Thing Predict Your Love Life,http://www.buzzfeed.com/perpetua/love-life-forecaster,7/26/2014,game,,,"Matthew Perpetua, Joanna Borns",other,,,
+BuzzFeed,Let This Thing Predict Your Love Life,http://www.buzzfeed.com/perpetua/love-life-forecaster,7/26/2014,game,,,"Matthew Perpetua, Joanna Borns",other,,,
 BuzzFeed,Live Election Results 2015,http://www.buzzfeed.com/buzzfeedukpolitics/general-election-2015-live,5/7/2015,"interactive graphic, live coverage",,,,other,,,
-Buzzfeed,These Maps Show A Massive Gender Gap in Bicycle-Riding,http://www.buzzfeed.com/jsvine/these-maps-show-a-massive-gender-gap-in-bicycle-riding,6/16/2014,"interactive map, static graphic",,,Jeremy Singer-Vine,other,,,
+BuzzFeed,Make Your Own New London Tube Line Sign,http://www.buzzfeed.com/paulcurry/the-barry-is-a-legend-line#.teq1roG82P,2/23/2016,interactive feature,,,Paul Curry,other,,,
+BuzzFeed,These Maps Show A Massive Gender Gap in Bicycle-Riding,http://www.buzzfeed.com/jsvine/these-maps-show-a-massive-gender-gap-in-bicycle-riding,6/16/2014,"interactive map, static graphic",,,Jeremy Singer-Vine,other,,,
 CableTV,Behind the scenes of The Walking Dead,http://www.cabletv.com/the-walking-dead,2013,interactive feature,,,,other,"Skrollr.js, Howler.js, Create.js",,
 Carlo Zapponi,The cost of human life,http://humancost.info/,2014,"interactive feature, interactive graphic",,,Carlo Zapponi,other,,,
 CartoDB,The L Train closure—what data can tell us,http://blog.cartodb.com/looking-at-the-l/,1/20/2016,"interactive map, static graphic",,,Mamata Akella,other,,,
@@ -36,6 +38,7 @@ Complex Magazine,"Kanye West: ""Honorary Degree""",http://www.complex.com/covers
 Concert Hotels,100 Years of Rock,http://www.concerthotels.com/100-years-of-rock,2014,"timeline, audio",,,,other,,,
 Cooper Hewitt,The Collection,http://collection.cooperhewitt.org/,,"database, photo gallery",,,,other,,,
 Counting Calculi,Uber vs Taxis Simulation,http://www.countingcalculi.com/interactives/uber_v_taxis/,2016,interactive graphic,,,Kevin McLaughlin,other,,http://www.countingcalculi.com/features/uber_v_taxis/,
+Decision Desk HQ,Decision Desk HQ,http://www.decisiondeskhq.com/,,"interactive map, cartogram",,,,other,,,
 Density Design,Rainscapes,http://labs.densitydesign.org/rainscapes/overview.html,,"interactive map, static map, interactive graphic, timeline",,,DensityDesign Lab,other,,,
 DigitalThoughtFacility,selfiecity,http://selfiecity.net/,2014,"interactive feature, interactive graphic, photo gallery, video",,,DigitalThoughtFacility,other,,,
 Discovery,Mt Everest Journey,http://everestavalanchetragedy.com/mt-everest-journey.html,3/5/2014,"interactive feature, 3-D, video",,,,other,,,
@@ -91,9 +94,12 @@ FiveThirtyEight,Searching for America’s Best Burrito,http://fivethirtyeight.co
 FiveThirtyEight,Should Prison Sentences Be Based On Crimes That Haven’t Been Committed Yet?,http://fivethirtyeight.com/features/prison-reform-risk-assessment/,8/4/2015,"interactive presentation, interactive graphic",,,"Matthew Conlen, Reuben Fischer-Baum, Andy Rossback",other,"React.js, Immutable.js, D3.js",,
 FiveThirtyEight,The Complete History Of The NBA,http://fivethirtyeight.com/interactives/the-complete-history-of-every-nba-team-by-elo/,5/21/2015,"interactive graphic, static graphic",,,"Reuben Fischer-Baum, Nate Silver",other,,,
 FiveThirtyEight,The Endorsement Primary,http://projects.fivethirtyeight.com/2016-endorsement-primary/,7/14/2015,interactive graphic,,,"Aaron Bycoffe, Allison McCann, Jay Boice",other,,,
+FiveThirtyEight,The Facebook Primary,http://projects.fivethirtyeight.com/facebook-primary/,2/11/2016,interactive map,,,"Matthew Conlen, Reuben Fischer-Baum",other,,,
+FiveThirtyEight,The Race To The Oscars,http://projects.fivethirtyeight.com/oscars-2016/,2016,interactive graphic,,Academy Awards,"Walt Hickey, Allison McCann",other,,,
 FiveThirtyEight,U.K. General Election Predictions,http://fivethirtyeight.com/interactives/uk-general-election-predictions/,2015,"interactive graphic, static map",,,"Matthew Conlen, Ritchie King",other,,,
 FiveThirtyEight,What Would It Take To Flip States In The 2016 Election?,http://projects.fivethirtyeight.com/2016-swing-the-election/,12/3/2015,"interactive graphic, interactive map, table",,,"Aaron Bycoffe, David Wasserman, Allison McCann",other,,,
 FiveThirtyEight,Which Flight Will Get You There Fastest?,http://fivethirtyeight.com/interactives/flights/,3/6/2015,"interactive graphic, interactive map",,,"Ritchie King, Nate Silver, Matthew Conlen",other,,,
+Frinkiac,Frinkiac,https://www.frinkiac.com/,2016,database,,,"Paul Kehrer, Sean Schulte, Allie Young",other,,,
 GAP,Gap Holiday Gift Guide,http://gapgiftguide.com/,2014,"interactive feature, video",,,,other,,,
 Gilt,Gilt Live,http://live.gilt.com/,,,,,,other,,,
 Goldilocks,Goldilocks,http://goldilocks.info/,2015,interactive graphic,,,"Visualised, TULP interactive",other,,,
@@ -102,6 +108,7 @@ Google Cultural Institute,Lincoln's Gettysburg Addresses,http://www.google.com/c
 Grantland,How Rebounds Work,http://grantland.com/features/how-rebounds-work/,10/14/2014,interactive graphic,,,Andy Woodruff,other,,,
 Grantland,Livin’ Thing: An Oral History of ‘Boogie Nights’,http://grantland.com/features/boogie-nights/,,"interactive feature, illustration",,,,other,,,
 Grantland,"The Definitive, One-Size-Fits-All, Accept-No Substitutes, Massively Comprehensive Guide to the Life and Times of KISS",http://grantland.com/chuck-klosterman-kiss-hall-of-fame/,2014,"interactive presentation, graphic",,,,other,,,
+Guess the correlation,Guess the Correlation,http://guessthecorrelation.com/,2016,game,,,Omar Wagih,other,,,
 Harvard Business Review,A New Approach to Research,http://hbr.org/web/infographic/2014/06/a-new-approach-to-research,2014,interactive graphic,,,"Clayton M. Christensen, Derek Van Bever",other,Underscore.js,,
 Histography,Histography - Timeline of History,http://histography.io/,2015,"interactive feature, timeline",,,Matan Stauber,other,,,
 Hopes & Fears,"13 miles of typography on Broadway, from A to Z",http://www.hopesandfears.com/hopes/culture/design/216855-typography-of-broadway-from-a-to-z,11/17/2015,"interactive feature, static map",,,"Sergii Rodionov, Oleg Mokhniuk",other,,,
@@ -110,6 +117,7 @@ Hopes&Fears,Where a '90s Tourist Guide Will Take You in NYC,http://www.hopesandf
 ICCV 2015,What Makes Tom Hanks Look Like Tom Hanks,http://grail.cs.washington.edu/projects/3DPersona/,2015,"video graphic, 3D",,,"Supasorn Suwajanakorn, Steven M. Seitz, Ira Kemelmacher-Shlizerman",other,,,
 InfoAmazonia,Fires in the Amazon,http://infoamazonia.org/projects/fire/,,interactive map,,,,other,"CartoDB, OpenStreetMap",,
 Inside Bay Area,Not Just Another Number,http://www.insidebayarea.com/ci_5329562?source=pkg,,database,,,,other,,,currently not working
+Interactive Things,Galaxy of Covers,https://lab.interactivethings.com/galaxy-of-covers/,2016,interactive graphic,,music,"Tania Boa, Ilya Boyandin, Mark Hintz, Jan Wächter, Benjamin Wiederkehr",other,,,
 Interactive Things,Unwanted – the ongoing war against daughters in India,http://lab.interactivethings.com/unwanted/,2015,"interactive feature, static graphic, static map",,,"Tania Boa, Gerhard Bliedung, Benjamin Wiederkehr",other,,,
 Into the Arctic,Into the Arctic,http://www.intothearctic.gp/,,,,,,other,,,
 Iraq and Afghanistan Veterans of America,The Wait We Carry,http://thewaitwecarry.org/,,,,,,other,,,interactive feature and infographic on the current state of support for veterans
@@ -138,6 +146,7 @@ McSweeney’s,An Interactive Guide to Ambiguous Grammar.,http://www.mcsweeneys.n
 mdaniels,"Outkast, in charts",http://www.mdaniels.com/outkast/,2014,"interactive presentation, audio, map, video, static graphic",,,Matt Daniels,other,,,became basis of the online publication Polygraph
 mdaniels,The Etymology of Shorty in Hip Hop,http://www.mdaniels.com/shorty/,2013,"interactive presentation, video, static graphic, audio, gif",,,Matt Daniels,other,,,became basis of the online publication Polygraph
 Metropop,Vienna’s electorate gap — district by district,http://www.metropop.eu/vienna-electorate-map/,,interactive graphic,,,"Ramon Bauer, Tina Frank, Michael Holzapfel, Clemens Schrammel",other,,,
+MOSI,Hooked On Music,http://www.hookedonmusic.org.uk/,,"game, audio",,,,other,,,
 MVSIC,MVSIC,http://mvsic.net/,,,,,,other,,,a website that provides a constant stream of highly curated music videos.
 National Academy of Science,Ri Advent Calendar 2013,http://www.rigb.org.uk/advent/01,2013,"interactive feature, video",,,,other,,,
 National Geographic,10 U.S. Cities With High Natural Gas Leak Risk,http://news.nationalgeographic.com/news/energy/2014/03/140314-us-cities-high-natural-gas-leak-risk/,3/14/2014,static graphic,,,"Julie C. Beer, Lauren E. James, Xaquín G.V., Marianne Lavelle, Kelsey Nowakowski, Alex Stegmaier",other,,,
@@ -235,9 +244,11 @@ NYPL Labs,Stereogranimator,http://stereo.nypl.org/,,,,,,other,,,
 NYPL Labs,The Shelley-Godwin Archive,http://shelleygodwinarchive.org/,,,,,,other,,,
 NYPL Labs,Theatrical Lighting Database,http://lightingdb.nypl.org/,,,,,,other,,,
 NYPL Labs,What's on the Menu?,http://menus.nypl.org/,,,,,,other,,,
+Office for National Statistics,How do survival estimates compare for common cancers?,http://visual.ons.gov.uk/how-do-survival-estimates-compare-for-common-cancers/,2/3/2016,interactive graphic,,,ONS Digital,other,,,
 Open Work,Predominantly,http://predominant.ly/,,"interactive feature, audio",,,Open Work,other,,,
 Open Work,The Mac Photographic Archive,http://the-mac-photo-archive.net/,,"interactive feature, photo gallery",,,,other,,,
 Osloby,Slik ble Oslo tatt av tyskerne,http://www.osloby.no/nyheter/Slik-ble-Oslo-tatt-av-tyskerne-7972497.html,4/9/2015,interactive map,,,,other,Leaflet,,
+OUTgoing,OUTgoing: Explore NYC's historic gay nightlife,http://outgoingnyc.com/,,"interactive map, time series",,,,other,"MapBox, Leaflet, OpenStreetMap, CartoDB",,
 Patatap,Patatap,http://www.patatap.com/,2014,"interactive feature, audio",,,"Jono Brandel, Lullatone",other,,,
 PBS,Ballot Watch,http://apps.frontline.org/votingrights/index.html,2014,"interactive feature, database",,,"Chris Amico, Evan Wexler",other,,,
 PBS,How Retirement Fees Cost You,http://www.pbs.org/wgbh/pages/frontline/business-economy-financial-crisis/retirement-gamble/how-retirement-fees-cost-you/,2014,"interactive feature, game",,,"Jason M. Breslow, Bill Rockwood, Evan Wexler",other,,,
@@ -265,6 +276,7 @@ Polygraph,The Most Successful Labels in Hip Hop,http://poly-graph.co/labels/,201
 Polygraph,The Most Timeless Songs Of All-Time,http://poly-graph.co/timeless/,2015,"interactive graphic, static graphic, table",,Music,Matt Daniels,other,,,
 Polygraph,"Using Spotify & YouTube Playlists to Crowdsource the Definition of ""Punk""",http://poly-graph.co/punk/,2016,interactive graphic,,,Matthew Daniels,other,,,
 Polygraph,Why Cam'ron’s Hey Ma Is Peak Nostalgia,http://poly-graph.co/camron/,10/13/2015,"illustration, gif, interactive graphic",,Music,"Eric M. Ruiz, Dale Edwin Murray",other,,,
+Poppy Field,Poppy Field - Visualising War Fatalities,http://www.poppyfield.org/,2016,"interactive graphic, time series",,,"Valentina D’Efilippo, Nicolas Pigelet",other,,,
 Poynter,Find out how diverse the newspaper industry is,http://www.poynter.org/news/mediawire/361641/interactive-find-out-how-diverse-the-newspaper-industry-is/,7/29/2015,"interactive feature, illustration",,,Gurman Bhatia,other,,,
 Prison Map,What does the geography of incarceration in the United States look like?,http://prisonmap.com/,,,,,,other,,,"Josh Begley, with help from Jer Thorp"
 Pulitzer Center,Child Lives Map,http://childlivesmap.com/,,interactive map,,,,other,,,
@@ -273,6 +285,7 @@ R2D3,A Visual Introduction to Machine Learning,http://www.r2d3.us/visual-intro-t
 Ralph Straumann,Last Glacial Maximum in Switzerland,http://ralphstraumann.ch/projects/last-glacial-maximum/switzerland/,2016,"interactive map, 3D",,,Ralph Straumann,other,three.js,http://www.ralphstraumann.ch/blog/2016/01/visualising-the-last-glacial-maximum-correctly/,
 Registration School,"Deptford, Rising",http://deptfordrising.com/,8/20/2014,interactive feature,,,Bastien Girschig,other,"WebGL, Google Maps",,
 Road to Larissa,215 Teeth / 1008 Beats,http://roadtolarissa.com/215-teeth/,2014,"interactive feature, audio",,,Adam Pearce,other,,,
+Road to Larissa,Minute by Minute Point Differentials of 2015 NBA Games,http://roadtolarissa.com/nba-minutes/,2016,interactive graphic,,,Adam Pearce,other,,,
 road to larissa,Teams' Combined Win and Loss Record Before Every NBA Game Ever,http://roadtolarissa.com/nba-win-loss/,2016,interactive graphic,,,Adam Pearce,other,,,
 Roads & Kingdoms,Breakfast,http://roadsandkingdoms.com/breakfast/,,interactive feature,,,Roads & Kingdoms,other,,,
 Roads & Kingdoms,It's 5 O'Clock Somewhere,http://roadsandkingdoms.com/5-oclock-somewhere/,,interactive feature,,,Roads & Kingdoms,other,,,
@@ -323,7 +336,9 @@ The Inspiration,"If We Don't Cut Carbon Emissions, This Is What Cities Will Look
 The Intercept,"Our Condolences, Afghanistan",https://theintercept.co/condolences/,2/27/2015,"static feature, static map",,,"Cora Currier, Josh Begley, Margot Williams",other,,,
 The Lowdown,What Are Traffic Waves and Why Do They Happen So Much?,http://ww2.kqed.org/lowdown/2013/11/12/traffic-waves/,11/13/2013,interactive graphic,,,"Matthew Green, Lewis Lehe",other,,,
 The New Tropic,Mapping crashes in and around I-95 express lanes,http://thenewtropic.com/i-95-express-lanes-crashes-map-data/,2/16/2015,"interactive map, interactive graphic",,,Rebekah Monson,other,,,
+The New Yorker,Gravitational Waves Exist: The Inside Story of How Scientists Finally Found Them,http://www.newyorker.com/tech/elements/gravitational-waves-exist-heres-how-scientists-finally-found-them,2/11/2016,"interactive map, video",,,Nicola Twilley,other,Google Maps,,
 The New Yorker,Inequality and New York’s Subway,http://projects.newyorker.com/story/subway/,2013,interactive graphic,,,Larry Buchanan,other,,,
+The Pew Charitable Trusts,States at a Crossroads on Criminal Justice Reform,http://www.pewtrusts.org/en/research-and-analysis/blogs/stateline/2016/01/28/states-at-a-crossroads-on-criminal-justice-reform,1/28/2016,interactive map,,,Rebecca Beitsch,other,Tableau,,
 The Royal Institution,The story of space debris,http://www.rigb.org/docs/debris/,2015,"interactive feature, 3D",,,Dr. Stuart Grey,other,,,All satellite data from space-track.org
 The Verge,Anatomy of a Hack,http://www.theverge.com/a/anatomy-of-a-hack,3/3/2015,"interactive presentation, video",,,"Adam Baumgartner, Aidan Feay",other,,,
 The Verge,Apple Watch Review: A Day in the Life,http://www.theverge.com/a/apple-watch-review,4/8/2015,"interactive presentation, video",,,"Jason Santa Maria, Josh Laincz, Ryan Mark",other,,,
@@ -378,6 +393,7 @@ Visualizing NYC,Transit Battle NYC,http://visualizing.nyc/projects/transit-battl
 Vizzuality,50 Years of concerts of The Rolling Stones,http://vizzuality.github.io/rollingstonesmap/#/,,"interactive map, timeline",,,,other,"CartoDB, OpenStreetMap",,
 Vogue,Where Chinatown Began,http://www.vogue.com/projects/13353964/california-drought-owens-lake/,10/1/2015,"interactive presentation, video",,,,other,,,
 Vulture,Play an 8-Bit-Style Parks and Recreation Flappy Li’l Sebastian Video-Game,http://www.vulture.com/2015/02/lil-sebastian-play-vultures-8-bit-game.html,2/24/2015,"game, illustration",,,"Seth Daggett, Justin McCraw, Lindsey Weber",other,,,
+Vulture,The 100 Jokes That Shaped Modern Comedy,http://www.vulture.com/2016/01/100-jokes-shaped-modern-comedy-c-v-r.html,1/28/2016,"illustration, timeline, video",,,,other,,,
 Washington Center for Equitable Growth,Mapping student debt: a new liability on the nation’s balance sheet,http://mappingstudentdebt.org/#/map-1-an-introduction,2015,"interactive map, static map, static graphic",,Student Debt,"Pim Linders, Kavya Vaghul, Dave Evans, Marshall Steinbaum",other,"Mapbox, OpenStreetMap",,
 Welikia,"Welcome to New York City, 1609",https://welikia.org/explore/mannahatta-map/,,interactive map,,,,other,,,
 Wired,Edward Snowden: The Untold Story,http://www.wired.com/2014/08/edward-snowden/,8/13/2014,"interactive presentation, video",,,,other,,,
@@ -414,6 +430,7 @@ YES!,Unsurrendered,http://reports.yesmagazine.org/unsurrendered/,2015,"interacti
 ,"Greater Than Or Equal To, a website about Alan Trotter, a human no one asked about",http://greaterthanorequalto.net/,2014,interactive feature,,,Alan Trotter,other,,,decision tree
 ,Hershey's Variations,http://bert.art.yale.edu/~yotamhadar/hershey/,2014,,,,Yotam Hadar,other,,,
 ,Hollow - An Interactive Documentary,http://hollowdocumentary.com/,,,,,,other,,,interactive feature
+,Il Momento - Immagine italiana a tempo,http://www.ilmomento.info/,,"interactive feature, photo gallery",,,,other,,,
 ,Japanese Woodblock Print Search,http://ukiyo-e.org/,2013,"interactive feature, database, photo gallery",,,John Resig,other,,,
 ,Languages above the Subway,http://subwaylanguages.michelleajohnson.com/1-2/,,interactive graphic,,,Michelle Johnson,other,,,
 ,NowThisNews | #instagraphic. #AfghanWar #war #casualties,http://instagram.com/p/cr4l38s96m/,,,,,,other,,,creative use of instagram video
@@ -431,6 +448,7 @@ YES!,Unsurrendered,http://reports.yesmagazine.org/unsurrendered/,2015,"interacti
 ,The Ghosts In Our Machine,http://www.theghostsinourmachine.com/interactive/,,,,,,other,,,interactive story
 ,The Hobbit: The Desolation of Smaug - A Journey Through Middle-earth,http://middle-earth.thehobbit.com/lake-town,2013,"interactive feature, interactive map, video",,,,other,,,
 ,The Largest Vocabulary in Hip hop,http://rappers.mdaniels.com.s3-website-us-east-1.amazonaws.com/,2014,"interactive graphic, static graphic",,,Matt Daniels,other,D3.js,,
+,The Library of Babel,https://libraryofbabel.info/,,database,,,,other,,,
 ,The MysloFans Project,http://myslofans.com/,,"interactive feature, crowd source",,,,other,HTML5 Boilerplate,,
 ,The New Pornographers: Brill Bruisers,http://thenewpornographers.com/iframe.html,2014,"interactive feature, audio",,,,other,,,
 ,The Nicest Place on the Internet,http://thenicestplaceontheinter.net/,,"video, interactive feature",,,,other,,,
@@ -444,6 +462,5 @@ YES!,Unsurrendered,http://reports.yesmagazine.org/unsurrendered/,2015,"interacti
 ,Washington Post | Know More (from Wonkblog),http://knowmore.washingtonpost.com/,,,,,,other,,,A discovery engine of information
 ,Welcome to Zombietown USA,http://mattbierbaum.github.io/zombies-usa/,2015,"interactive map, time series",,,Matt Bierbaum,other,,,
 ,You're getting old!,http://you.regettingold.com/,2015,interactive feature,,,Jolyon Ralph,other,,,
-,Il Momento - Immagine italiana a tempo,http://www.ilmomento.info/,,"interactive feature, photo gallery",,,,other,,,
-The Pew Charitable Trusts,States at a Crossroads on Criminal Justice Reform,http://www.pewtrusts.org/en/research-and-analysis/blogs/stateline/2016/01/28/states-at-a-crossroads-on-criminal-justice-reform,1/28/2016,interactive map,,,Rebecca Beitsch,other,Tableau,,
-OUTgoing,OUTgoing: Explore NYC's historic gay nightlife,http://outgoingnyc.com/,,"interactive map, time series",,,,other,"MapBox, Leaflet, OpenStreetMap, CartoDB",,
+Fractal Fantasy,Fractal Fantasy,http://fractalfantasy.net/,2016,"interactive video, audio, 3d",,,,other,,,
+FiveThirtyEight,Who’s On Track For The Nomination?,http://projects.fivethirtyeight.com/election-2016/delegate-targets/republicans/,2/29/2016,"interactive graphic, interactive map, illustration",,Election 2016,"Aaron Bycoffe, David Wasserman, Allison McCann, Nate Silver, Kristina Micotti",other,,,

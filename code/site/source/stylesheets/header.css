@@ -10,7 +10,6 @@
 	position: relative;
 	width: 100%;
 	z-index: 100;
-/*	padding-top: 40px;*/
 }
 
 .intro.with-image {
@@ -31,7 +30,7 @@
 
 
 .intro.no-image {
-	background-image:url(../image/one-pixel.png) !important;
+	background-image:url(../images/one-pixel.png) !important;
 }
 
 /* Intro : Navigation */
@@ -61,11 +60,12 @@
 }
 
 .intro .navigation:hover .icon.on-blue.thrust-logo {
-/*	background-image: url(../image/logo_on_white.svg);*/
+/*	background-image: url(../images/logo_on_white.svg);*/
 }
 
-.header {
+.intro .header {
 	margin-bottom: 25px;
+	padding-top: 3em;
 }
 
 .logo {}
@@ -97,13 +97,6 @@
 	overflow-y: scroll;
 }
 
-body {
-  overflow: hidden;
-}
-
-body.menu-hidden {
-  overflow: auto;
-}
 
 body.menu-hidden .menu-panel {
 	display: none;
@@ -173,16 +166,16 @@ a.nav-link {}
 
 .icon.thrust-logo {
 	display: inline-block;
-	background-image: url(../image/logo.svg);
+	background-image: url(../images/logo.svg);
 }
 .icon.thrust-logo.stack {
-	background-image: url(../image/logo_stack.svg);
+	background-image: url(../images/logo_stack.svg);
 	max-width: 226px;
 	padding-bottom: 100px;
 }
 
 .icon.thrust-logo.stack.beta {
-	background-image: url(../image/logo_stack_beta.svg);
+	background-image: url(../images/logo_stack_beta.svg);
 	padding-bottom: 100px;
 }
 
@@ -197,17 +190,17 @@ a.nav-link {}
 .icon.close {}
 .icon.email {}
 .icon.facebook {
-	background-image: url(../image/share_fb.svg);
+	background-image: url(../images/share_fb.svg);
 }
 .icon.github {
-	background-image: url(../image/share_g.svg);
+	background-image: url(../images/share_g.svg);
 }
 .icon.hamburger {
-	background-image: url(../image/menu.svg);
+	background-image: url(../images/menu.svg);
 }
 .icon.rss {}
 .icon.twitter {
-	background-image: url(../image/share_t.svg);
+	background-image: url(../images/share_t.svg);
 }
 
 
@@ -252,7 +245,7 @@ a.nav-link {}
 .intro .navigation-content {
 	display: inline-block;
 	width: 100%;
-	padding: 0 40px;
+	padding: 0px;
 }
 
 header {
@@ -365,5 +358,15 @@ header {
 
 
 
+/* Smaller than phablet (also point when grid becomes active) */
+@media (max-width: 550px) {
+
+	.intro .header {
+		padding-top: 1em;
+	}
+	.intro .nav-options ul {
+		display: none;
+	}
+}
 
 

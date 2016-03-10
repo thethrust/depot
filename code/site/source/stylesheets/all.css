@@ -119,9 +119,7 @@ a:hover {
 ------------------------------*/
 
 .header {
-	padding-top: 8em;
-/*	border-top: 8px solid #009eff;*/
-/*	margin-top: -8px;*/
+	padding-top: 4em;
 }
 
 .header.border-bottom {
@@ -138,6 +136,16 @@ a:hover {
 .header .headline:hover {
 	color: #0069aa;
 	text-decoration: none;
+}
+
+.header h1 {
+	margin-bottom: 10px;
+}
+
+.header h1,
+.header .headline,
+.header .subhead {
+	text-align: center;
 }
 
 .header .subhead {
@@ -338,6 +346,7 @@ span.org-name {
 .subheader p,
 .prompt p {
 	color: #999;
+	font-size: 18px;
 }
 
 
@@ -427,7 +436,7 @@ ul.in-columns-four {
 /*--------     -------------*/
 
 	.header {
-		padding-top: 4em;
+		padding-top: 2em;
 	}
 
 	.header.border-bottom {
@@ -436,6 +445,7 @@ ul.in-columns-four {
 
 	.header .headline {
 		font-size: 3rem;
+		margin-bottom: 20px;
 	}
 
 	.header .subhead {
