@@ -1,0 +1,299 @@
+
+/****************************
+
+KT - UTILITY CLASSES 
+
+*****************************/
+
+
+
+/*
+	STRUCTURE
+----------------------------------- */
+
+.col {
+	width: 100%;
+	max-width: 100%;
+/*	background-color: #ccc;*/
+}
+
+.col.col-wide {
+	width: 100%;
+	max-width: 976px;
+	margin: 0 auto;
+}
+
+.col.col-left {
+/*	background-color: #f4f4f4;*/
+	display: inline;
+	float: left;
+}
+
+.col.col-right {
+/*	background-color: #f4f4f4;*/
+	display: inline;
+	float: right;
+}
+
+
+.col.one {
+	max-width: 25%;
+}
+.col.two {
+	max-width: 50%;
+}
+.col.three {
+	max-width: 75%;
+}
+
+.col.col-full {
+/*	background-color: #009eff;*/
+}
+
+
+
+
+
+/*
+	COLOURS 
+----------------------------------- */
+
+/* BLUES */
+.kt-blue-1 { color: #eef8ff; }
+.kt-blue-2 { color: #ddf2ff; }
+.kt-blue-3 { color: #ccecff; }
+.kt-blue-4 { color: #bbe5ff; }
+.kt-blue-5 { color: #aadfff; }
+.kt-blue-6 { color: #99d8ff; }
+.kt-blue-7 { color: #88d2ff; }
+.kt-blue-8 { color: #77cbff; }
+.kt-blue-9 { color: #66c5ff; }
+.kt-blue-10 { color: #55beff; }
+.kt-blue-11 { color: #44b8ff; }
+.kt-blue-12 { color: #33b1ff; }
+.kt-blue-13 { color: #22abff; }
+.kt-blue-14 { color: #11a4ff; }
+.kt-blue-15 { color: #009eff; } /* PRIMARY */
+.kt-blue-16 { color: #0093ee; }
+.kt-blue-17 { color: #0089dd; }
+.kt-blue-18 { color: #007ecc; }
+.kt-blue-19 { color: #0074bb; }
+.kt-blue-20 { color: #0069aa; } /* SECONDARY */
+.kt-blue-21 { color: #005f99; }
+.kt-blue-22 { color: #005488; }
+.kt-blue-23 { color: #004a77; } /* BLUE SHADOWS */
+.kt-blue-24 { color: #003f66; }
+.kt-blue-25 { color: #003555; }
+.kt-blue-26 { color: #002a44; }
+.kt-blue-27 { color: #002033; }
+.kt-blue-28 { color: #001522; }
+.kt-blue-29 { color: #001622; } /* BLACK - OPTION 2 */
+.kt-blue-30 { color: #000b11; } /* BLACK - OPTION 1 */
+
+
+/* GREYS */
+.kt-grey-1 { color: #ffffff; }
+.kt-grey-2 { color: #f6f6f6; }
+.kt-grey-3 { color: #eeeeee; }
+.kt-grey-4 { color: #e5e5e5; }
+.kt-grey-5 { color: #dddddd; }
+.kt-grey-6 { color: #d4d4d4; }
+.kt-grey-7 { color: #cccccc; }
+.kt-grey-8 { color: #c3c3c3; }
+.kt-grey-9 { color: #bbbbbb; }
+.kt-grey-10 { color: #b2b2b2; }
+.kt-grey-11 { color: #aaaaaa; }
+.kt-grey-12 { color: #a1a1a1; }
+.kt-grey-13 { color: #999999; }
+.kt-grey-14 { color: #909090; }
+.kt-grey-15 { color: #888888; }
+.kt-grey-16 { color: #7f7f7f; }
+.kt-grey-17 { color: #777777; }
+.kt-grey-18 { color: #6e6e6e; }
+.kt-grey-19 { color: #666666; }
+.kt-grey-20 { color: #5d5d5d; }
+.kt-grey-21 { color: #555555; }
+.kt-grey-22 { color: #4c4c4c; }
+.kt-grey-23 { color: #444444; }
+.kt-grey-24 { color: #3b3b3b; }
+.kt-grey-25 { color: #333333; }
+.kt-grey-26 { color: #2a2a2a; }
+.kt-grey-27 { color: #222222; } /* PRIMARY */
+.kt-grey-28 { color: #1a1a1a; }
+.kt-grey-29 { color: #111111; }
+.kt-grey-30 { color: #090909; }
+.kt-grey-31 { color: #000000; }
+
+
+
+/* BACKGROUND BLUES */
+.kt-bg-blue-1 { background-color: #eef8ff; }
+.kt-bg-blue-2 { background-color: #ddf2ff; }
+.kt-bg-blue-3 { background-color: #ccecff; }
+.kt-bg-blue-4 { background-color: #bbe5ff; }
+.kt-bg-blue-5 { background-color: #aadfff; }
+.kt-bg-blue-6 { background-color: #99d8ff; }
+.kt-bg-blue-7 { background-color: #88d2ff; }
+.kt-bg-blue-8 { background-color: #77cbff; }
+.kt-bg-blue-9 { background-color: #66c5ff; }
+.kt-bg-blue-10 { background-color: #55beff; }
+.kt-bg-blue-11 { background-color: #44b8ff; }
+.kt-bg-blue-12 { background-color: #33b1ff; }
+.kt-bg-blue-13 { background-color: #22abff; }
+.kt-bg-blue-14 { background-color: #11a4ff; }
+.kt-bg-blue-15 { background-color: #009eff; } /* PRIMARY */
+.kt-bg-blue-16 { background-color: #0093ee; }
+.kt-bg-blue-17 { background-color: #0089dd; }
+.kt-bg-blue-18 { background-color: #007ecc; }
+.kt-bg-blue-19 { background-color: #0074bb; }
+.kt-bg-blue-20 { background-color: #0069aa; } /* SECONDARY */
+.kt-bg-blue-21 { background-color: #005f99; }
+.kt-bg-blue-22 { background-color: #005488; }
+.kt-bg-blue-23 { background-color: #004a77; }
+.kt-bg-blue-24 { background-color: #003f66; }
+.kt-bg-blue-25 { background-color: #003555; }
+.kt-bg-blue-26 { background-color: #002a44; }
+.kt-bg-blue-27 { background-color: #002033; }
+.kt-bg-blue-28 { background-color: #001522; }
+.kt-bg-blue-29 { background-color: #001622; } /* BLACK - OPTION 2 */
+.kt-bg-blue-30 { background-color: #000b11; } /* BLACK - OPTION 1 */
+
+
+/* BACKGROUND GREYS */
+.kt-bg-grey-1 { background-color: #ffffff; }
+.kt-bg-grey-2 { background-color: #f6f6f6; }
+.kt-bg-grey-3 { background-color: #eeeeee; }
+.kt-bg-grey-4 { background-color: #e5e5e5; }
+.kt-bg-grey-5 { background-color: #dddddd; }
+.kt-bg-grey-6 { background-color: #d4d4d4; }
+.kt-bg-grey-7 { background-color: #cccccc; }
+.kt-bg-grey-8 { background-color: #c3c3c3; }
+.kt-bg-grey-9 { background-color: #bbbbbb; }
+.kt-bg-grey-10 { background-color: #b2b2b2; }
+.kt-bg-grey-11 { background-color: #aaaaaa; }
+.kt-bg-grey-12 { background-color: #a1a1a1; }
+.kt-bg-grey-13 { background-color: #999999; }
+.kt-bg-grey-14 { background-color: #909090; }
+.kt-bg-grey-15 { background-color: #888888; }
+.kt-bg-grey-16 { background-color: #7f7f7f; }
+.kt-bg-grey-17 { background-color: #777777; }
+.kt-bg-grey-18 { background-color: #6e6e6e; }
+.kt-bg-grey-19 { background-color: #666666; }
+.kt-bg-grey-20 { background-color: #5d5d5d; }
+.kt-bg-grey-21 { background-color: #555555; }
+.kt-bg-grey-22 { background-color: #4c4c4c; }
+.kt-bg-grey-23 { background-color: #444444; }
+.kt-bg-grey-24 { background-color: #3b3b3b; }
+.kt-bg-grey-25 { background-color: #333333; }
+.kt-bg-grey-26 { background-color: #2a2a2a; }
+.kt-bg-grey-27 { background-color: #222222; } /* PRIMARY */
+.kt-bg-grey-28 { background-color: #1a1a1a; }
+.kt-bg-grey-29 { background-color: #111111; }
+.kt-bg-grey-30 { background-color: #090909; }
+.kt-bg-grey-31 { background-color: #000000; }
+
+
+
+
+
+
+/*
+	MODIFIERS 
+----------------------------------- */
+
+
+.blue-bg {
+	background-color: #009eff;
+}
+
+/* Hides text of icon elements */
+.has-icon-text {
+	color: transparent;
+}
+
+
+/* Flag items with nonstandard actions */
+.js-action {}
+
+.hidden {
+	display: none;
+	opacity: 0;
+}
+
+.visually-hidden {
+	opacity: 0;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+}
+
+/* Make an element un-selectable/un-highlightable */
+.unselectable {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	pointer-events: none;
+}
+
+
+/* to prevent css3 animation jitters */
+.bf {
+	backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+/* Debugger */
+.debug-outline,
+.debug-outline * {
+	outline: 1px solid red;
+}
+
+
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.kt-main:before,
+.kt-main:after,
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.kt-main:after,
+.clearfix:after {
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

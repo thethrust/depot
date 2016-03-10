@@ -1,0 +1,31 @@
+<div class="intro no-image col col-full" style="background-image:url({% thumbnail object.image 1500x370 crop upscale subject_location=object.image.subject_location %}); background-repeat:no-repeat; background-size: cover">
+    
+    <!--  LOGO / NAVIGATION  -->
+    <nav class="navigation clearfix">
+        <div class="navigation-content">
+            <header role="header" class="header logo">
+                <div class="logo-content">
+                    <h1 class="logo-text kt-bg-blue-15">
+                        <a class="nav-link" href="{% url 'index' %}"><i class="icon thrust-logo stack on-blue beta has-icon-text">Identity</i></a>
+                    </h1>
+                </div>
+            </header>
+            <div class="nav-options columns twelve clearfix">
+                <div class="nav link columns three u-pull-left">
+                    <ul class="link-list">
+                        <li class="link-item"><a class="nav-link subscribe" href="#"><span class="kt-bold caps">Subscribe</span></a></li>
+                        <li class="link-item"><a class="nav-link latest" href="/about/"><span class="kt-bold caps">About</span></a></li>
+                    </ul>
+                </div>
+                <div class="nav social columns three u-pull-right">
+                    <ul class="social-list">
+                        <li class="social-item"><a class="nav-link" href="https://github.com/thethrust"><i class="icon github on-white has-icon-text">Github</i></a></li>
+                        <li class="social-item"><a class="nav-link" href="https://twitter.com/the_thrust"><i class="icon twitter on-white has-icon-text">Twitter</i></a></li>
+                        <li class="social-item first"><a class="nav-link" href="https://www.facebook.com/thethrust"><i class="icon facebook on-white has-icon-text">Facebook</i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--  INTRO  -->
+</div>

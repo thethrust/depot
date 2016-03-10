@@ -87,7 +87,7 @@ a:hover {
 }
 
 .main {
-	border-top: 8px solid #0069aa;
+/*	border-top: 8px solid #0069aa;*/
 	border-bottom: 8px solid #0069aa;
 	padding-bottom: 8em;
 }
@@ -120,8 +120,8 @@ a:hover {
 
 .header {
 	padding-top: 8em;
-	border-top: 8px solid #009eff;
-	margin-top: -8px;
+/*	border-top: 8px solid #009eff;*/
+/*	margin-top: -8px;*/
 }
 
 .header.border-bottom {
@@ -129,7 +129,7 @@ a:hover {
 }
 
 .header .headline {
-/*	color: #222;*/
+	color: #222;
 	font-family: 'kt-sans-bold', sans-serif;
 	font-size: 6rem;
 	margin-bottom: 10px;

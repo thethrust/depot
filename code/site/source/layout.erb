@@ -12,10 +12,15 @@
     <%= stylesheet_link_tag "html5-boilerplate.css" %>
     <%= stylesheet_link_tag "skeleton" %>
     <%= stylesheet_link_tag "all" %>
+    <%= stylesheet_link_tag "kt-utils" %>
+    <%= stylesheet_link_tag "kt-typography" %>
+    <%= stylesheet_link_tag "header" %>
   </head>
   <body>
 
     <div id="main" class="main" role="main">
+      <%= partial("partials/super_header", :locals => {}) %>
+
       <div class="main-inner container" role="main">
         
         <%= yield %>
