@@ -172,10 +172,28 @@ a:hover {
 	padding-top: 1em;
 }
 
+.main-inner .navigation { overflow: hidden; }
+
+.main-inner ul.nav-list { 
+	position: relative;
+	float: left;
+	width: auto;
+	left: 50%;
+	padding: 0;
+	list-style: none; 
+}
+
 .navigation li {
 	display: inline;
 	float: left;
 	margin: 10px;
+}
+
+.main-inner li.nav-item { 
+	position: relative;
+	float: left;
+	right: 50%;
+	margin: 0 5px; 
 }
 
 .navigation li:first-child {
@@ -195,6 +213,13 @@ a:hover {
 	font-family: 'kt-sans-bold', sans-serif;
 	text-decoration: underline;
 }
+
+
+
+
+
+
+
 
 /* PRIMARY SPACE 
 ------------------------------*/
@@ -495,9 +520,6 @@ ul.in-columns-four {
 		right: 10px;
 		bottom: 10px;
 	}
-
-
-
 
 
 	.subheader h4 {
