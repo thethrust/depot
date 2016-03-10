@@ -4,10 +4,6 @@
 
 <!--  DATE SORTING TEST  -->
 <% dates = tag_list.map { |d| d.sort_date = get_sorting_date(d.published) } %>
-<% puts "-----------------------" %>
-<% dates.each do |dt| %>
-  <% puts dt %>
-<% end %>
   <section class="border-top">
     <div class="section-inner">
       <h4>Entries <span class="entry-count"><%= tag_list.length %></span></h4>

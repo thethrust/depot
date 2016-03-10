@@ -1,29 +1,45 @@
 <% if type == "index" %>
+	<% projects = data["ind-all"]["projects"] %>
+	<% projects_with_sort = projects.map { |p| p.sort_date = get_sorting_date(p.published); p } %>
 
-<div class="module border-top u-full-width">
-	<h6 class="kicker">Recent Tags</h6>
-	<ul class="link-list">
-		<li class="link-item"><a href="#"><span></span></a></li>
-	</ul>
-	<a class="link overflow" href="/tags/index.html"><span>See all &rarr;</span></a>
-</div>
+	<% current_year = Date.today.year %>
+	<% current_month = Date.today.month %>
+	<% current_projects = [] %>
 
-<div class="module border-top u-full-width">
-	<h6 class="kicker">Recent Tools</h6>
-	<ul class="link-list">
-		<li class="link-item"><a href="#"><span></span></a></li>
-	</ul>
-	<a class="link overflow" href="/toolsused/index.html"><span>See all &rarr;</span></a>
-</div>
+	<% projects_with_sort.each do |prj| %>
+		<% if prj.sort_date.match("#{current_year}") %>
+			<% if prj.sort_date.match("-#{current_month}-") || prj.sort_date.match("-#{current_month - 1}-") || prj.sort_date.match("-#{current_month - 2}-") %>
+				<% current_projects << prj %>
+			<% end %>
+		<% end %>
+	<% end %>
 
-<div class="module border-top u-full-width">
-	<h6 class="kicker">Recent Projects</h6>
-	<ul class="link-list">
-		<li class="link-item"><a href="#"><span></span></a></li>
-	</ul>
-	<a class="link overflow" href="#"><span>See all &rarr;</span></a>
-</div>
+	<% current_tags = current_projects.map{ |cp| cp.tags }.flatten.uniq %>
+	<% current_tools = current_projects.map{ |cp| cp.toolsused }.flatten.uniq %>
 
+	<% if current_tags.length > 0 %>
+		<div class="module border-top u-full-width">
+			<h6 class="kicker">Recent Tags</h6>
+			<ul class="link-list">
+				<% current_tags.reject{ |r| r.nil? }.each do |ct| %>
+				<%= partial("partials/link_item", :locals => { :slug => sluggify(ct), :item => ct, :type => "tags" }) %>
+				<% end %>
+			</ul>
+			<a class="link overflow" href="/tags/"><span>See all &rarr;</span></a>
+		</div>
+	<% end %>
+
+	<% if current_tools.length > 0 %>
+		<div class="module border-top u-full-width">
+			<h6 class="kicker">Recent Tools</h6>
+			<ul class="link-list">
+				<% current_tools.reject{ |r| r.nil? }.each do |ct| %>
+				<%= partial("partials/link_item", :locals => { :slug => sluggify(ct), :item => ct, :type => "toolsused" }) %>
+				<% end %>
+			</ul>
+			<a class="link overflow" href="/toolsused/"><span>See all &rarr;</span></a>
+		</div>
+	<% end %>
 <% end %>
 
 

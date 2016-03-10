@@ -139,7 +139,7 @@ a:hover {
 }
 
 .header h1 {
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 .header h1,
@@ -468,9 +468,12 @@ ul.in-columns-four {
 		padding-bottom: 3em;
 	}
 
+	.header h1 {
+		margin-bottom: 20px;
+	}
+
 	.header .headline {
 		font-size: 3rem;
-		margin-bottom: 20px;
 	}
 
 	.header .subhead {
