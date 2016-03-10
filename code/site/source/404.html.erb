@@ -1,0 +1,42 @@
+---
+pageable: true
+per_page: 10
+---
+
+<% fixes = { "org" => "organization", "toolsused" => "tools used", "orgtype" => "type of organization" } %>
+<% sections = data["ind-all"].meta.keys.reject{ |k| k == "orgtype" } %>
+
+<%= partial("partials/header", :locals => { :fixes => fixes, :header_class => "index", :active_tag => "index" }) %>
+
+<div class="row primary index">
+  <div class="columns three border-right">
+    <%= partial("partials/page_column_left", :locals => { :type => "index" }) %>
+  </div>
+  <div class="columns nine">
+    <div class="subheader">
+        <h4>Sorry, but the page you're looking for doesn't exist!</h4>
+      </div>
+    <% sections.reject{ |k| k == "orgtype" || k == "section" }.each do |sect| %>
+      <section class="border-top">
+        <div class="section-inner">
+          <h4><%= (fixes.has_key? sect ) ? fixes[sect].titleize : sect.titleize %> <span class="entry-count"><%= plural_text(data["ind-all"].meta[sect].length) %></span></h4>
+          <ul class="link-list in-columns-two">
+            <div class="link-set">
+              <% (0..10).each do |i| %>
+                <% span_class1 = ((i + 1) < 10) ? "class='comma'" : "" %>
+                <% item = data["ind-all"].meta[sect][i] %>
+                <li class="link-item entry"><a href="/<%= sect %>/<%= sluggify(item) %>/"><span <%= span_class1 %>><%= item %></span></a></li>
+              <% end %>
+              <% (11..20).each do |i| %>
+                <% span_class2 = ((i + 1) < 21) ? "class='comma'" : "" %>
+                <% item = data["ind-all"].meta[sect][i] %>
+                <li class="link-item entry"><a href="/<%= sect %>/<%= sluggify(item) %>/"><span <%= span_class2 %>><%= item %></span></a></li>
+              <% end %>
+            </div>
+          </ul>
+          <a class="link overflow" href="/<%= sluggify(sect) %>/"><span>See all &rarr;</span></a>
+        </div>
+      </section>
+    <% end %>
+  </div>
+</div>

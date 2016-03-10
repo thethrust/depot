@@ -9,13 +9,15 @@
         <% (0..10).each do |i| %>
           <% if !related_authors[i].nil? %>
             <% item = related_authors[i] %>
-            <%= partial("partials/link_item", :locals => { :slug => sluggify(item), :item => item, :type => "authors" }) %>
+            <% span_class1 = ((i + 1) < 10) ? "class='comma'" : "" %>
+                <li class="link-item entry"><a href="/authors/<%= sluggify(item) %>/"><span <%= span_class1 %>><%= item %></span></a></li>
           <% end %>
         <% end %>
         <% (11..20).each do |i| %>
           <% if !related_authors[i].nil? %>
             <% item = related_authors[i] %>
-            <%= partial("partials/link_item", :locals => { :slug => sluggify(item), :item => item, :type => "authors" }) %>
+            <% span_class2 = ((i + 1) < 21) ? "class='comma'" : "" %>
+                <li class="link-item entry"><a href="/authors/<%= sluggify(item) %>/"><span <%= span_class2 %>><%= item %></span></a></li>
           <% end %>
         <% end %>
       </div>

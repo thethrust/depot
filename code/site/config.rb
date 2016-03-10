@@ -12,6 +12,7 @@ require 'date'
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+page '404.html', directory_index: false
 
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout

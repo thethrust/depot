@@ -330,7 +330,7 @@ section h4,
 }
 
 span.comma:after {
-	color: #ccc;
+	color: #999;
 	content: ",";
 }
 
