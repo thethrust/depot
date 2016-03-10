@@ -1,27 +1,27 @@
-<% if type == "index" %>
-	<% projects = data["ind-all"]["projects"] %>
-	<% projects_with_sort = projects.map { |p| p.sort_date = get_sorting_date(p.published); p } %>
+<% projects = data["ind-all"]["projects"] %>
+<% projects_with_sort = projects.map { |p| p.sort_date = get_sorting_date(p.published); p } %>
 
-	<% current_year = Date.today.year %>
-	<% current_month = Date.today.month %>
-	<% current_projects = [] %>
+<% current_year = Date.today.year %>
+<% current_month = Date.today.month %>
+<% current_projects = [] %>
 
-	<% projects_with_sort.each do |prj| %>
-		<% if prj.sort_date.match("#{current_year}") %>
-			<% if prj.sort_date.match("-#{current_month}-") || prj.sort_date.match("-#{current_month - 1}-") || prj.sort_date.match("-#{current_month - 2}-") %>
-				<% current_projects << prj %>
-			<% end %>
+<% projects_with_sort.each do |prj| %>
+	<% if prj.sort_date.match("#{current_year}") %>
+		<% if prj.sort_date.match("-#{current_month}-") || prj.sort_date.match("-#{current_month - 1}-") || prj.sort_date.match("-#{current_month - 2}-") %>
+			<% current_projects << prj %>
 		<% end %>
 	<% end %>
+<% end %>
 
-	<% current_tags = current_projects.map{ |cp| cp.tags }.flatten.uniq %>
-	<% current_tools = current_projects.map{ |cp| cp.toolsused }.flatten.uniq %>
+<% recent_tags = current_projects.map{ |cp| cp.tags }.flatten.uniq %>
+<% recent_tools = current_projects.map{ |cp| cp.toolsused }.flatten.uniq %>
 
-	<% if current_tags.length > 0 %>
+<% if type == "index" %>
+	<% if recent_tags.length > 0 %>
 		<div class="module border-top u-full-width">
 			<h6 class="kicker">Recent Tags</h6>
 			<ul class="link-list">
-				<% current_tags.reject{ |r| r.nil? }.each do |ct| %>
+				<% recent_tags.reject{ |r| r.nil? }.each do |ct| %>
 				<%= partial("partials/link_item", :locals => { :slug => sluggify(ct), :item => ct, :type => "tags" }) %>
 				<% end %>
 			</ul>
@@ -29,11 +29,11 @@
 		</div>
 	<% end %>
 
-	<% if current_tools.length > 0 %>
+	<% if recent_tools.length > 0 %>
 		<div class="module border-top u-full-width">
 			<h6 class="kicker">Recent Tools</h6>
 			<ul class="link-list">
-				<% current_tools.reject{ |r| r.nil? }.each do |ct| %>
+				<% recent_tools.reject{ |r| r.nil? }.each do |ct| %>
 				<%= partial("partials/link_item", :locals => { :slug => sluggify(ct), :item => ct, :type => "toolsused" }) %>
 				<% end %>
 			</ul>
@@ -112,6 +112,30 @@
 					<%= partial("partials/link_item", :locals => { :slug => sluggify(tg), :item => tg, :type => "tags" }) %>
 					<% end %>
 				</ul>
+			</div>
+		<% end %>
+
+		<% if recent_tags.length > 0 %>
+			<div class="module border-top u-full-width">
+				<h6 class="kicker">Recent Tags</h6>
+				<ul class="link-list">
+					<% recent_tags.reject{ |r| r.nil? }.each do |ct| %>
+					<%= partial("partials/link_item", :locals => { :slug => sluggify(ct), :item => ct, :type => "tags" }) %>
+					<% end %>
+				</ul>
+				<a class="link overflow" href="/tags/"><span>See all &rarr;</span></a>
+			</div>
+		<% end %>
+
+		<% if recent_tools.length > 0 %>
+			<div class="module border-top u-full-width">
+				<h6 class="kicker">Recent Tools</h6>
+				<ul class="link-list">
+					<% recent_tools.reject{ |r| r.nil? }.each do |ct| %>
+					<%= partial("partials/link_item", :locals => { :slug => sluggify(ct), :item => ct, :type => "toolsused" }) %>
+					<% end %>
+				</ul>
+				<a class="link overflow" href="/toolsused/"><span>See all &rarr;</span></a>
 			</div>
 		<% end %>
 
