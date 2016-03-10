@@ -31,9 +31,8 @@
         <h4><%= k %> <span class="entry-count"><%= plural_text(v.length) %></span></h4>
         <ul class="link-set entries in-columns-two">
           <% v.each_with_index do |item, i| %>
-            <li class="link-item entry"><a href="/<%= tag_name %>/<%= sluggify(item) %>/"><span><%= item %></span></a>
-              <% if (i + 1) < v.length %>, 
-              <% end %>
+            <% span_class = ((i + 1) < v.length) ? "class='comma'" : "" %>
+            <li class="link-item entry"><a href="/<%= tag_name %>/<%= sluggify(item) %>/"><span <%= span_class %>><%= item %></span></a>
             </li>
           <% end %>
         </ul>

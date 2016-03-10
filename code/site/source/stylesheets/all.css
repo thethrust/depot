@@ -329,6 +329,17 @@ section h4,
 	color: #009eff;
 }
 
+span.comma:after {
+	color: #ccc;
+	content: ",";
+}
+
+.entries:hover .entry:hover span.comma:after {
+	color: #ccc;
+	content: ",";
+	text-decoration: none;
+}
+
 .entry h6 {
 	margin-bottom: 5px;
 }
