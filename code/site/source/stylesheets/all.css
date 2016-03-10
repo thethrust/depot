@@ -129,9 +129,15 @@ a:hover {
 }
 
 .header .headline {
+/*	color: #222;*/
 	font-family: 'kt-sans-bold', sans-serif;
 	font-size: 6rem;
 	margin-bottom: 10px;
+}
+
+.header .headline:hover {
+	color: #0069aa;
+	text-decoration: none;
 }
 
 .header .subhead {
@@ -413,5 +419,98 @@ ul.in-columns-four {
 	.row.primary .columns.three {
 		display: none;
 	}
+
+
+
+
+
+/*--------     -------------*/
+
+	.header {
+		padding-top: 4em;
+	}
+
+	.header.border-bottom {
+		padding-bottom: 3em;
+	}
+
+	.header .headline {
+		font-size: 3rem;
+	}
+
+	.header .subhead {
+		font-size: 2rem;
+	}
+
+	.navigation li.nav-item:nth-child(5) {
+		margin-left: 0px;
+	}
+
+	.navigation li {
+		margin: 0px 10px;
+	}
+
+	.navigation li.nav-item a {
+		font-size: 12px;
+	}
+
+	.row.primary {
+		margin-bottom: 2em;
+	}
+
+	section h4, .kicker {
+		font-size: 12px;
+	}
+
+	.link-item span {
+		font-size: 15px;
+	}
+
+	.link.overflow,
+	.link.overflow span {
+		font-size: 11px;
+	}
+
+	.prompt .subhead {
+		font-size: 2rem;
+		margin-bottom: 5px;
+	}
+
+	.prompt p {
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+	#back-to-top {
+		right: 10px;
+		bottom: 10px;
+	}
+
+
+
+
+
+	.subheader h4 {
+		font-size: 2.5rem;
+	}
+
+	.link-list.entries li.entry {
+		margin-bottom: 10px;
+	}
+
+	.entry h6 {
+		margin-bottom: 0;
+	}
+
+	.entry h6 a span {
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.meta.secondary p span {
+		font-size: 11px;
+	}
+
+
 }
 

@@ -30,12 +30,24 @@ module CustomHelpers
 		dte = str
 
 		begin 
-			dte = Date.strptime(str, "%d-%b-%y")
+			dte = Date.strptime(str, "%d/%b/%y")
 		rescue Exception=>e
 			puts "Problem: #{e}"
 		end
 
 		dte
+	end
+
+	def get_sorting_date(dt)
+		if !dt.nil? 
+			if dt.match("/")
+				dt = dt.split("/").reverse.join("-")
+			end
+		else
+			dt = "unknown"
+		end
+
+		return dt
 	end
 
 	def get_current_year

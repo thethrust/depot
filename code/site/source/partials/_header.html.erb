@@ -1,6 +1,6 @@
 <div class="header u-full-width border-bottom">
-  <h1 class="headline">Depot</h1>
-  <h3 class="subhead">All of the interactive news projects that I could find.<span class="<%= header_class %>"> There are currently <%= data["ind-all"]["projects"].length %> projects.</span></h3>
+  <h1><a class="headline" href="/">Depot</a></h1>
+  <h3 class="subhead">An encyclopedia of interactive news.<span class="<%= header_class %>"> There are currently <%= data["ind-all"]["projects"].length %> projects.</span></h3>
 </div>
 
 <div class="navigation u-full-width border-bottom">
@@ -9,7 +9,7 @@
     <% data["ind-all"]["meta"].keys.reject{ |k| k == "orgtype" || k == "section" }.each do |k| %>
     <% fix_key = (fixes.has_key? k ) ? fixes[k] : k %>
     <% is_active = (k == active_tag) ? "is-active" : ""  %>
-    <li class="nav-item <%= is_active %>"><a href="/<%= k %>/index.html"><%= fix_key %></a></li>
+    <li class="nav-item <%= is_active %>"><a href="/<%= k %>/"><%= fix_key %></a></li>
     <% end %>
   </ul>
 </div>

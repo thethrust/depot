@@ -1,4 +1,6 @@
+require 'rubygems'
 require 'helpers/custom_helpers'
+require 'date'
 
 ###
 # Page options, layouts, aliases and proxies
@@ -80,6 +82,24 @@ proxy "/entry/index.html", "page_entry.html", :locals => { :title => "HELLO!" }
 $entries = data["ind-all"]["projects"]
 $prox_sections = data["ind-all"].meta.keys
 $meta_data = data["ind-all"].meta
+
+# dates = data["ind-all"]["projects"].map {|p| p["published"] }
+
+# dates.each do |dt|
+#   if !dt.nil? 
+#     if dt.match("/")
+#       dt = dt.split("/").reverse
+#       dt = dt.join("-")
+#     else
+#       dt = dt
+#     end
+#   else
+#     dt = 'unknown'
+#   end
+#   puts dt
+# end
+
+
 
 # Generate nav pages 
 $prox_sections.each do |tag|
