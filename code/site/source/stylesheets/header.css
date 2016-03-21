@@ -356,6 +356,14 @@ header {
 }
 
 
+/* ads */
+.ad.col-full {
+    position: relative;
+    padding: 40px 0px;
+    z-index: 999;
+    clear: both;
+    text-align: center;
+}
 
 
 /* Smaller than phablet (also point when grid becomes active) */

@@ -158,6 +158,3 @@ DEPENDENCIES
   redcarpet (~> 3.3, >= 3.3.3)
   tzinfo-data
   wdm (~> 0.1.0)
-
-BUNDLED WITH
-   1.11.2
